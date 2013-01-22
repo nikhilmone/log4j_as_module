@@ -1,0 +1,6 @@
+18:02:24,198 INFO  (http-/127.0.0.1:8080-1) [com.test.Myslf4jTest.TestLog] from slf4j=== test slf4j log
+18:02:24,200 ERROR (http-/127.0.0.1:8080-1) [com.test.Myslf4jTest.TestLog] from slf4j=== test slf4j error log
+18:02:24,204 ERROR (http-/127.0.0.1:8080-1) [com.test.Myslf4jTest.TestLog] from slf4j=== error===Index: 2, Size: 2
+18:09:32,792 INFO  (http-/127.0.0.1:8080-1) [com.test.Myslf4jTest.TestLog] from slf4j=== test slf4j log
+18:09:32,793 ERROR (http-/127.0.0.1:8080-1) [com.test.Myslf4jTest.TestLog] from slf4j=== test slf4j error log
+18:09:32,797 ERROR (http-/127.0.0.1:8080-1) [com.test.Myslf4jTest.TestLog] from slf4j=== error===Index: 2, Size: 2

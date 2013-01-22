@@ -1,0 +1,3 @@
+12:40:58,279 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) Pausing Coyote HTTP/1.1 on http-/127.0.0.1:8080
+12:40:58,280 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) Stopping Coyote HTTP/1.1 on http-/127.0.0.1:8080
+12:40:58,281 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-4) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started

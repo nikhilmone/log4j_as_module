@@ -1,0 +1,417 @@
+16:32:51,332 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+16:32:51,387 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+16:32:51,388 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+16:32:51,357 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+16:32:51,395 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+16:32:51,585 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+16:32:51,599 INFO  [org.jboss.as.security] (MSC service thread 1-4) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+16:32:51,766 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-7) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+16:32:52,264 INFO  [org.jboss.as.naming] (MSC service thread 1-5) JBAS011802: Starting Naming Service
+16:32:52,301 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+16:32:52,833 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+16:32:53,804 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-6) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+16:32:54,116 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+16:32:54,403 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-5) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+16:32:54,820 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+16:32:54,858 INFO  [org.jboss.as.remoting] (MSC service thread 1-1) JBAS017100: Listening on 127.0.0.1:4447
+16:32:54,858 INFO  [org.jboss.as.remoting] (MSC service thread 1-5) JBAS017100: Listening on 127.0.0.1:9999
+16:32:55,177 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+16:32:55,178 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started in 11406ms - Started 134 of 214 services (79 services are passive or on-demand)
+16:33:24,854 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "slf4jtest.war"
+16:33:25,614 INFO  [org.jboss.as.osgi] (MSC service thread 1-2) JBAS011907: Register module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+16:33:25,808 INFO  [org.jboss.web] (MSC service thread 1-3) JBAS018210: Registering web context: /slf4jtest
+16:33:25,948 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018559: Deployed "slf4jtest.war"
+16:34:05,837 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] INFO com.test.Myslf4jTest.TestLog - from slf4j=== test log4j log
+16:34:05,837 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] ERROR com.test.Myslf4jTest.TestLog - from slf4j=== test log4j error log
+16:34:05,838 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+16:34:05,838 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+16:34:05,838 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+16:34:05,839 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+16:34:05,839 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+16:34:05,839 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Myslf4jTest.TestLog.doGet(TestLog.java:45)
+16:34:05,839 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+16:34:05,839 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+16:34:05,840 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+16:34:05,840 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+16:34:05,840 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+16:34:05,840 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+16:34:05,840 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+16:34:05,840 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+16:34:05,841 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+16:34:05,841 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+16:34:05,841 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+16:34:05,841 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+16:34:05,841 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+16:34:05,842 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+16:34:05,842 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+16:34:05,842 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] ERROR com.test.Myslf4jTest.TestLog - from slf4j=== error===Index: 2, Size: 2
+16:34:05,842 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+16:38:11,040 WARN  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015006: The deployment scanner found that the content for exploded deployment slf4jtest.war has been deleted, but auto-deploy/undeploy for exploded deployments is not enabled and the slf4jtest.war.deployed marker file for this deployment has not been removed. As a result, the deployment is not being undeployed, but resources needed by the deployment may have been deleted and application errors may occur. Deleting the slf4jtest.war.deployed marker file to trigger undeploy is recommended.
+16:38:41,067 INFO  [org.jboss.as.osgi] (MSC service thread 1-3) JBAS011908: Unregister module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+16:38:41,163 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment slf4jtest.war in 100ms
+16:38:41,164 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "slf4jtest.war"
+16:38:41,256 INFO  [org.jboss.as.osgi] (MSC service thread 1-6) JBAS011907: Register module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+16:38:41,269 INFO  [org.jboss.web] (MSC service thread 1-8) JBAS018210: Registering web context: /slf4jtest
+16:38:41,368 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018565: Replaced deployment "slf4jtest.war" with deployment "slf4jtest.war"
+16:38:50,710 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] INFO com.test.Myslf4jTest.TestLog - from slf4j=== test slf4j log
+16:38:50,710 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] ERROR com.test.Myslf4jTest.TestLog - from slf4j=== test slf4j error log
+16:38:50,711 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+16:38:50,711 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+16:38:50,711 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+16:38:50,711 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+16:38:50,711 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+16:38:50,711 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Myslf4jTest.TestLog.doGet(TestLog.java:45)
+16:38:50,712 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+16:38:50,712 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+16:38:50,712 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+16:38:50,712 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+16:38:50,712 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+16:38:50,713 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+16:38:50,713 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+16:38:50,713 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+16:38:50,713 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+16:38:50,714 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+16:38:50,714 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+16:38:50,714 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+16:38:50,714 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+16:38:50,714 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+16:38:50,715 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+16:38:50,715 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] ERROR com.test.Myslf4jTest.TestLog - from slf4j=== error===Index: 2, Size: 2
+16:38:50,715 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+17:02:21,751 WARN  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015006: The deployment scanner found that the content for exploded deployment slf4jtest.war has been deleted, but auto-deploy/undeploy for exploded deployments is not enabled and the slf4jtest.war.deployed marker file for this deployment has not been removed. As a result, the deployment is not being undeployed, but resources needed by the deployment may have been deleted and application errors may occur. Deleting the slf4jtest.war.deployed marker file to trigger undeploy is recommended.
+17:02:41,761 INFO  [org.jboss.as.osgi] (MSC service thread 1-2) JBAS011908: Unregister module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+17:02:41,771 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment slf4jtest.war in 11ms
+17:02:41,771 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "slf4jtest.war"
+17:02:41,883 INFO  [org.jboss.as.osgi] (MSC service thread 1-7) JBAS011907: Register module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+17:02:41,895 INFO  [org.jboss.web] (MSC service thread 1-5) JBAS018210: Registering web context: /slf4jtest
+17:02:42,002 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "slf4jtest.war" with deployment "slf4jtest.war"
+17:03:32,405 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] INFO com.test.Myslf4jTest.TestLog - from slf4j=== test slf4j log
+17:03:32,406 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] ERROR com.test.Myslf4jTest.TestLog - from slf4j=== test slf4j error log
+17:03:32,406 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+17:03:32,406 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+17:03:32,406 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+17:03:32,406 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+17:03:32,406 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+17:03:32,406 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Myslf4jTest.TestLog.doGet(TestLog.java:45)
+17:03:32,407 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+17:03:32,407 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+17:03:32,407 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+17:03:32,407 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+17:03:32,407 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+17:03:32,407 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+17:03:32,407 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+17:03:32,407 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+17:03:32,407 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+17:03:32,408 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+17:03:32,408 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+17:03:32,408 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+17:03:32,408 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+17:03:32,408 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+17:03:32,408 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+17:03:32,408 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] ERROR com.test.Myslf4jTest.TestLog - from slf4j=== error===Index: 2, Size: 2
+17:03:32,408 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+17:11:11,803 INFO  [org.jboss.as.osgi] (MSC service thread 1-6) JBAS011908: Unregister module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+17:11:45,894 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+17:11:45,902 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+17:11:45,939 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+17:11:45,942 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+17:11:45,947 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+17:11:45,951 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+17:11:45,996 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+17:11:46,005 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+17:11:46,018 INFO  [org.jboss.as.naming] (MSC service thread 1-8) JBAS011802: Starting Naming Service
+17:11:46,020 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) JBAS015400: Bound mail session [java:jboss/mail/Default]
+17:11:46,024 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+17:11:46,093 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-1) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+17:11:46,282 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-7) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:11:46,380 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+17:11:46,491 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+17:11:46,494 INFO  [org.jboss.as.remoting] (MSC service thread 1-3) JBAS017100: Listening on 127.0.0.1:4447
+17:11:46,494 INFO  [org.jboss.as.remoting] (MSC service thread 1-5) JBAS017100: Listening on 127.0.0.1:9999
+17:11:46,659 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+17:11:46,659 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started in 1996ms - Started 134 of 214 services (79 services are passive or on-demand)
+17:12:11,520 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "slf4jtest.war"
+17:12:11,776 INFO  [org.jboss.as.osgi] (MSC service thread 1-2) JBAS011907: Register module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+17:12:11,863 INFO  [org.jboss.web] (MSC service thread 1-7) JBAS018210: Registering web context: /slf4jtest
+17:12:11,996 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018559: Deployed "slf4jtest.war"
+17:12:41,478 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] INFO com.test.Myslf4jTest.TestLog - from slf4j=== test slf4j log
+17:12:41,478 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] ERROR com.test.Myslf4jTest.TestLog - from slf4j=== test slf4j error log
+17:12:41,478 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+17:12:41,478 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+17:12:41,479 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+17:12:41,479 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+17:12:41,480 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+17:12:41,480 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Myslf4jTest.TestLog.doGet(TestLog.java:45)
+17:12:41,480 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+17:12:41,480 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+17:12:41,480 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+17:12:41,480 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+17:12:41,480 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+17:12:41,480 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+17:12:41,481 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+17:12:41,481 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+17:12:41,481 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+17:12:41,481 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+17:12:41,481 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+17:12:41,481 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+17:12:41,481 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+17:12:41,481 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+17:12:41,481 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+17:12:41,482 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] ERROR com.test.Myslf4jTest.TestLog - from slf4j=== error===Index: 2, Size: 2
+17:12:41,482 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+17:59:04,070 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-5) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+17:59:04,078 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-3) Pausing Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:59:04,078 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-3) Stopping Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:59:11,985 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+17:59:11,996 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+17:59:12,042 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+17:59:12,050 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+17:59:12,065 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+17:59:12,067 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+17:59:12,079 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+17:59:12,079 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+17:59:12,087 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+17:59:12,098 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) JBAS015400: Bound mail session [java:jboss/mail/Default]
+17:59:12,130 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+17:59:12,248 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-7) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+17:59:12,355 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:59:12,529 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+17:59:12,696 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+17:59:12,706 INFO  [org.jboss.as.remoting] (MSC service thread 1-8) JBAS017100: Listening on 127.0.0.1:4447
+17:59:12,706 INFO  [org.jboss.as.remoting] (MSC service thread 1-1) JBAS017100: Listening on 127.0.0.1:9999
+17:59:12,884 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+17:59:12,884 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started in 2094ms - Started 134 of 214 services (79 services are passive or on-demand)
+18:00:12,734 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "slf4jtest.war"
+18:00:12,981 INFO  [org.jboss.as.osgi] (MSC service thread 1-7) JBAS011907: Register module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+18:00:13,071 INFO  [org.jboss.web] (MSC service thread 1-4) JBAS018210: Registering web context: /slf4jtest
+18:00:13,249 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "slf4jtest.war"
+18:00:20,770 ERROR [stderr] (http-/127.0.0.1:8080-1) SLF4J: Class path contains multiple SLF4J bindings.
+18:00:20,770 ERROR [stderr] (http-/127.0.0.1:8080-1) SLF4J: Found binding in [vfs:/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/lib/slf4j-simple-1.7.2.jar/org/slf4j/impl/StaticLoggerBinder.class]
+18:00:20,770 ERROR [stderr] (http-/127.0.0.1:8080-1) SLF4J: Found binding in [vfs:/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/lib/slf4j-log4j12-1.7.2.jar/org/slf4j/impl/StaticLoggerBinder.class]
+18:00:20,770 ERROR [stderr] (http-/127.0.0.1:8080-1) SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+18:00:20,771 ERROR [stderr] (http-/127.0.0.1:8080-1) SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+18:00:20,776 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] INFO com.test.Myslf4jTest.TestLog - from slf4j=== test slf4j log
+18:00:20,776 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] ERROR com.test.Myslf4jTest.TestLog - from slf4j=== test slf4j error log
+18:00:20,776 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+18:00:20,776 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+18:00:20,777 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+18:00:20,777 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+18:00:20,777 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+18:00:20,777 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Myslf4jTest.TestLog.doGet(TestLog.java:45)
+18:00:20,777 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+18:00:20,777 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+18:00:20,777 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+18:00:20,778 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+18:00:20,778 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+18:00:20,778 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+18:00:20,778 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+18:00:20,778 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+18:00:20,778 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+18:00:20,778 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+18:00:20,778 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+18:00:20,778 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+18:00:20,779 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+18:00:20,779 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+18:00:20,779 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+18:00:20,779 ERROR [stderr] (http-/127.0.0.1:8080-1) [http-/127.0.0.1:8080-1] ERROR com.test.Myslf4jTest.TestLog - from slf4j=== error===Index: 2, Size: 2
+18:00:20,779 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+18:00:58,368 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-8) Pausing Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:00:58,369 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-8) Stopping Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:00:58,370 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-1) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+18:01:03,718 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+18:01:03,724 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+18:01:03,778 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+18:01:03,787 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+18:01:03,793 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+18:01:03,823 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+18:01:03,842 INFO  [org.jboss.as.security] (MSC service thread 1-8) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+18:01:03,853 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-3) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+18:01:03,867 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+18:01:03,870 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+18:01:03,895 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) JBAS015400: Bound mail session [java:jboss/mail/Default]
+18:01:03,928 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-2) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+18:01:04,104 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-2) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:01:04,234 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+18:01:04,321 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+18:01:04,329 INFO  [org.jboss.as.remoting] (MSC service thread 1-6) JBAS017100: Listening on 127.0.0.1:4447
+18:01:04,334 INFO  [org.jboss.as.remoting] (MSC service thread 1-1) JBAS017100: Listening on 127.0.0.1:9999
+18:01:04,491 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+18:01:04,491 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started in 1826ms - Started 134 of 214 services (79 services are passive or on-demand)
+18:01:19,346 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "slf4jtest.war"
+18:01:19,600 INFO  [org.jboss.as.osgi] (MSC service thread 1-7) JBAS011907: Register module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+18:01:19,661 INFO  [org.jboss.web] (MSC service thread 1-6) JBAS018210: Registering web context: /slf4jtest
+18:01:19,820 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018559: Deployed "slf4jtest.war"
+18:01:27,906 INFO  [com.test.Myslf4jTest.TestLog] (http-/127.0.0.1:8080-1) from slf4j=== test slf4j log
+18:01:27,906 ERROR [com.test.Myslf4jTest.TestLog] (http-/127.0.0.1:8080-1) from slf4j=== test slf4j error log
+18:01:27,907 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+18:01:27,907 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+18:01:27,908 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+18:01:27,908 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+18:01:27,908 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+18:01:27,908 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Myslf4jTest.TestLog.doGet(TestLog.java:45)
+18:01:27,908 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+18:01:27,908 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+18:01:27,908 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+18:01:27,908 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+18:01:27,909 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+18:01:27,909 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+18:01:27,909 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+18:01:27,909 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+18:01:27,909 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+18:01:27,909 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+18:01:27,909 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+18:01:27,909 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+18:01:27,910 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+18:01:27,910 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+18:01:27,910 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+18:01:27,910 ERROR [com.test.Myslf4jTest.TestLog] (http-/127.0.0.1:8080-1) from slf4j=== error===Index: 2, Size: 2
+18:01:27,910 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+18:01:39,600 INFO  [org.jboss.as.osgi] (MSC service thread 1-4) JBAS011908: Unregister module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+18:01:39,604 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-5) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+18:01:49,328 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+18:01:49,348 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+18:01:49,410 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+18:01:49,416 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+18:01:49,422 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+18:01:49,438 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-1) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+18:01:49,452 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+18:01:49,455 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+18:01:49,468 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+18:01:49,483 INFO  [org.jboss.as.naming] (MSC service thread 1-4) JBAS011802: Starting Naming Service
+18:01:49,506 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) JBAS015400: Bound mail session [java:jboss/mail/Default]
+18:01:49,620 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-5) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+18:01:49,774 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-5) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:01:49,926 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+18:01:50,025 INFO  [org.jboss.as.remoting] (MSC service thread 1-1) JBAS017100: Listening on 127.0.0.1:4447
+18:01:50,025 INFO  [org.jboss.as.remoting] (MSC service thread 1-3) JBAS017100: Listening on 127.0.0.1:9999
+18:01:50,028 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+18:01:50,201 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+18:01:50,202 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started in 2047ms - Started 134 of 214 services (79 services are passive or on-demand)
+18:02:00,032 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found slf4jtest (another copy).war in deployment directory. To trigger deployment create a file called slf4jtest (another copy).war.dodeploy
+18:02:00,033 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found slf4jtest (copy).war in deployment directory. To trigger deployment create a file called slf4jtest (copy).war.dodeploy
+18:02:15,056 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "slf4jtest.war"
+18:02:15,407 INFO  [org.jboss.as.osgi] (MSC service thread 1-4) JBAS011907: Register module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+18:02:15,495 INFO  [org.jboss.web] (MSC service thread 1-5) JBAS018210: Registering web context: /slf4jtest
+18:02:15,650 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018559: Deployed "slf4jtest.war"
+18:02:24,200 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+18:02:24,200 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+18:02:24,201 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+18:02:24,202 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+18:02:24,202 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+18:02:24,202 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Myslf4jTest.TestLog.doGet(TestLog.java:45)
+18:02:24,202 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+18:02:24,202 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+18:02:24,202 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+18:02:24,202 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+18:02:24,202 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+18:02:24,203 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+18:02:24,203 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+18:02:24,203 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+18:02:24,203 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+18:02:24,203 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+18:02:24,203 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+18:02:24,203 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+18:02:24,203 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+18:02:24,203 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+18:02:24,204 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+18:02:24,204 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+18:07:05,891 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-5) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+18:07:05,894 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) Pausing Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:07:05,895 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) Stopping Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:08:54,517 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+18:08:54,534 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+18:08:54,596 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+18:08:54,599 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+18:08:54,601 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+18:08:54,614 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-1) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+18:08:54,628 INFO  [org.jboss.as.security] (MSC service thread 1-4) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+18:08:54,640 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+18:08:54,657 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+18:08:54,644 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+18:08:54,661 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+18:08:54,790 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-1) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+18:08:54,936 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-4) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:08:55,064 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+18:08:55,142 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+18:08:55,151 INFO  [org.jboss.as.remoting] (MSC service thread 1-4) JBAS017100: Listening on 127.0.0.1:9999
+18:08:55,151 INFO  [org.jboss.as.remoting] (MSC service thread 1-1) JBAS017100: Listening on 127.0.0.1:4447
+18:08:55,350 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+18:08:55,350 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started in 1966ms - Started 134 of 214 services (79 services are passive or on-demand)
+18:09:25,172 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "slf4jtest.war"
+18:09:25,577 INFO  [org.jboss.as.osgi] (MSC service thread 1-4) JBAS011907: Register module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+18:09:25,647 INFO  [org.jboss.web] (MSC service thread 1-2) JBAS018210: Registering web context: /slf4jtest
+18:09:25,778 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018559: Deployed "slf4jtest.war"
+18:09:32,793 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+18:09:32,794 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+18:09:32,795 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+18:09:32,795 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+18:09:32,795 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+18:09:32,795 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Myslf4jTest.TestLog.doGet(TestLog.java:45)
+18:09:32,795 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+18:09:32,795 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+18:09:32,796 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+18:09:32,796 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+18:09:32,796 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+18:09:32,796 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+18:09:32,796 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+18:09:32,796 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+18:09:32,796 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+18:09:32,796 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+18:09:32,797 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+18:09:32,797 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+18:09:32,797 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+18:09:32,797 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+18:09:32,797 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+18:09:32,797 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+18:10:03,424 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-4) Pausing Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:10:03,424 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-4) Stopping Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:10:03,427 INFO  [org.jboss.as.osgi] (MSC service thread 1-8) JBAS011908: Unregister module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+18:10:03,429 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-6) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+18:10:13,012 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+18:10:13,029 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+18:10:13,097 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+18:10:13,101 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+18:10:13,116 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+18:10:13,125 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+18:10:13,180 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+18:10:13,181 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-2) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+18:10:13,183 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+18:10:13,188 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) JBAS015400: Bound mail session [java:jboss/mail/Default]
+18:10:13,211 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+18:10:13,354 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-7) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+18:10:13,493 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-1) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:10:13,607 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+18:10:13,732 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+18:10:13,736 INFO  [org.jboss.as.remoting] (MSC service thread 1-1) JBAS017100: Listening on 127.0.0.1:4447
+18:10:13,736 INFO  [org.jboss.as.remoting] (MSC service thread 1-6) JBAS017100: Listening on 127.0.0.1:9999
+18:10:13,911 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+18:10:13,912 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started in 1963ms - Started 134 of 214 services (79 services are passive or on-demand)
+18:12:58,820 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "slf4jtest.war"
+18:12:59,090 INFO  [org.jboss.as.osgi] (MSC service thread 1-4) JBAS011907: Register module: Module "deployment.slf4jtest.war:main" from Service Module Loader
+18:12:59,178 INFO  [org.jboss.web] (MSC service thread 1-2) JBAS018210: Registering web context: /slf4jtest
+18:12:59,328 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "slf4jtest.war"
+18:13:28,878 INFO  [com.test.Myslf4jTest.TestLog] (http-/127.0.0.1:8080-1) from slf4j=== test slf4j log
+18:13:28,878 ERROR [com.test.Myslf4jTest.TestLog] (http-/127.0.0.1:8080-1) from slf4j=== test slf4j error log
+18:13:28,879 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+18:13:28,879 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+18:13:28,879 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+18:13:28,879 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+18:13:28,880 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+18:13:28,880 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Myslf4jTest.TestLog.doGet(TestLog.java:45)
+18:13:28,880 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+18:13:28,880 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+18:13:28,880 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+18:13:28,880 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+18:13:28,880 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+18:13:28,880 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+18:13:28,880 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+18:13:28,881 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+18:13:28,881 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+18:13:28,881 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+18:13:28,881 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+18:13:28,881 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+18:13:28,881 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+18:13:28,881 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+18:13:28,881 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+18:13:28,881 ERROR [com.test.Myslf4jTest.TestLog] (http-/127.0.0.1:8080-1) from slf4j=== error===Index: 2, Size: 2
+18:13:28,882 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2

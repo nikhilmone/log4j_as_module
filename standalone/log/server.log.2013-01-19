@@ -1,0 +1,1159 @@
+23:18:33,487 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+23:18:33,477 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+23:18:33,487 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+23:18:33,500 TRACE [org.jboss.as.controller.management-operation] (MSC service thread 1-6) Executing "read-attribute" []
+23:18:33,485 DEBUG [org.jboss.as.ee] (ServerService Thread Pool -- 29) Activating EE subsystem
+23:18:33,490 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 45) Prepared response is null
+23:18:33,489 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+23:18:33,501 DEBUG [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) Activated ConfigAdmin Subsystem
+23:18:33,502 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 28) Prepared response is {"outcome" => undefined}
+23:18:33,503 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 26) Prepared response is {"outcome" => undefined}
+23:18:33,498 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 34) Prepared response is {"outcome" => undefined}
+23:18:33,496 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+23:18:33,496 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 43) Prepared response is {"outcome" => undefined}
+23:18:33,494 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 35) Prepared response is {"outcome" => undefined}
+23:18:33,492 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 42) Prepared response is null
+23:18:33,512 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+23:18:33,519 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+23:18:33,521 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 41) Prepared response is {"outcome" => undefined}
+23:18:33,517 DEBUG [org.jboss.as.configadmin] (MSC service thread 1-4) Starting: service jboss.configadmin in mode ACTIVE
+23:18:33,523 TRACE [org.jboss.as.controller.management-operation] (MSC service thread 1-6) Prepared response is {
+    "outcome" => undefined,
+    "result" => "STANDALONE"
+}
+23:18:33,541 TRACE [org.jboss.as.mail.extension.MailSessionService] (ServerService Thread Pool -- 37) service constructed with config: MailSessionConfig{imapServer=null, jndiName='java:jboss/mail/Default', smtpServer=org.jboss.as.mail.extension.MailSessionServer@5b31fd9, pop3Server=null}
+23:18:33,543 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 37) Prepared response is {"outcome" => undefined}
+23:18:33,544 TRACE [org.jboss.as.naming] (MSC service thread 1-4) Bound resource mail/Default into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@282bfa91 (service name service jboss.naming.context.java.jboss.mail.Default)
+23:18:33,545 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) JBAS015400: Bound mail session [java:jboss/mail/Default]
+23:18:33,555 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 40) Prepared response is {"outcome" => undefined}
+23:18:33,575 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 38) Prepared response is {"outcome" => undefined}
+23:18:33,596 DEBUG [org.jboss.as.txn] (ServerService Thread Pool -- 46) nodeIdentifier=1
+
+23:18:33,597 DEBUG [org.jboss.as.txn] (ServerService Thread Pool -- 46) varDirPathRef=jboss.server.data.dir, varDirPath=var
+
+23:18:33,646 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 49) Prepared response is {"outcome" => undefined}
+23:18:33,647 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-5) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+23:18:33,647 TRACE [org.jboss.as.connector.logging] (MSC service thread 1-5) config=org.jboss.as.connector.subsystems.jca.JcaSubsystemConfiguration@12b9b67b
+23:18:33,649 DEBUG [org.jboss.as.connector.services.mdr] (MSC service thread 1-6) Starting service MDR
+23:18:33,649 DEBUG [org.jboss.as.deployment.connector.registry] (MSC service thread 1-7) Starting service service jboss.jdbc-driver.registry
+23:18:33,668 DEBUG [org.jboss.as.connector.services.mdr] (MSC service thread 1-8) Starting service RaRepositoryService
+23:18:33,670 DEBUG [org.jboss.as.connector.logging] (MSC service thread 1-3) started ManagementRepositoryService service jboss.management_repository
+23:18:33,670 DEBUG [org.jboss.as.deployment.connector.registry] (MSC service thread 1-7) Starting sevice service jboss.raregistry
+23:18:33,680 DEBUG [org.jboss.as.connector.logging] (ServerService Thread Pool -- 33) Building WorkManager
+23:18:33,684 DEBUG [org.jboss.as.connector.logging] (ServerService Thread Pool -- 33) Building DefaultBootstrapContext
+23:18:33,723 DEBUG [org.jboss.as.security] (MSC service thread 1-5) Starting SecurityBootstrapService
+23:18:33,724 INFO  [org.jboss.as.security] (MSC service thread 1-5) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+23:18:33,794 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 33) Prepared response is {"outcome" => undefined}
+23:18:33,826 DEBUG [org.jboss.as.security] (MSC service thread 1-7) Starting SecurityManagementService
+23:18:33,828 DEBUG [org.jboss.as.security] (MSC service thread 1-3) Starting SubjectFactoryService
+23:18:33,828 TRACE [org.jboss.as.naming] (MSC service thread 1-4) Bound resource jaas into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@282bfa91 (service name service jboss.naming.context.java.jboss.jaas)
+23:18:33,875 DEBUG [org.jboss.as.security] (MSC service thread 1-4) Starting JaasConfigurationService
+23:18:33,894 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 36) Prepared response is {"outcome" => undefined}
+23:18:33,966 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 29) Prepared response is {"outcome" => undefined}
+23:18:33,967 DEBUG [org.jboss.as.osgi] (ServerService Thread Pool -- 39) BundleContext not available for management operation
+23:18:33,969 TRACE [org.jboss.as.osgi] (ServerService Thread Pool -- 39) Expecting initial deployments: [slf4jtest.war, log4jtest.war]
+23:18:33,975 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 39) Prepared response is {"outcome" => undefined}
+23:18:33,995 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+23:18:33,996 TRACE [org.jboss.as.deployment.connector.registry] (MSC service thread 1-7) Adding driver: com.h2database.h2:main:org.h2.Driver#1#3
+23:18:33,996 DEBUG [org.jboss.as.connector.logging] (MSC service thread 1-1) Starting JCA WorkManager
+23:18:33,999 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 27) Prepared response is {"outcome" => undefined}
+23:18:34,042 DEBUG [org.jboss.as.security] (MSC service thread 1-6) Starting SecurityDomainService(other)
+23:18:34,044 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) hibernate cache container installed
+23:18:34,046 DEBUG [org.jboss.as.security] (MSC service thread 1-7) Starting SecurityDomainService(jboss-web-policy)
+23:18:34,046 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 44) Prepared response is {"outcome" => undefined}
+23:18:34,046 DEBUG [org.jboss.as.security] (MSC service thread 1-3) Starting SecurityDomainService(jboss-ejb-policy)
+23:18:34,066 DEBUG [org.jboss.as.security] (MSC service thread 1-3) Creating SDC for domain=jboss-ejb-policy
+23:18:34,066 DEBUG [org.jboss.as.security] (MSC service thread 1-7) Creating SDC for domain=jboss-web-policy
+23:18:34,066 DEBUG [org.jboss.as.security] (MSC service thread 1-6) Creating SDC for domain=other
+23:18:34,183 DEBUG [org.jboss.as.txn] (ServerService Thread Pool -- 46) objectStorePathRef=jboss.server.data.dir, objectStorePath=tx-object-store
+
+23:18:34,209 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Loading Infinispan defaults from jar:file:/home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules/org/jboss/as/clustering/infinispan/main/jboss-as-clustering-infinispan-7.1.2.Final-redhat-1.jar!/infinispan-defaults.xml
+23:18:34,218 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 46) Prepared response is {"outcome" => undefined}
+23:18:34,230 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 32) Prepared response is {"outcome" => undefined}
+23:18:34,364 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache configuration service for entity installed for container hibernate
+23:18:34,365 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache service for cache entity installed for container hibernate
+23:18:34,366 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache configuration service for local-query installed for container hibernate
+23:18:34,367 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache service for cache local-query installed for container hibernate
+23:18:34,368 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache configuration service for timestamps installed for container hibernate
+23:18:34,368 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache service for cache timestamps installed for container hibernate
+23:18:34,368 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 31) Prepared response is {"outcome" => undefined}
+23:18:34,750 DEBUG [org.jboss.as.ejb3] (ServerService Thread Pool -- 30) Adding EJB @Asynchronous support
+23:18:34,752 DEBUG [org.jboss.as.ejb3] (ServerService Thread Pool -- 30) Configuring timers
+23:18:34,754 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 30) Prepared response is {"outcome" => undefined}
+23:18:34,915 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 47) Prepared response is {"outcome" => undefined}
+23:18:35,274 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-2) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+23:18:35,679 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.ContextPropertiesDeploymentAspect
+23:18:35,679 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.deployers.EndpointRecordProcessorDeploymentAspect
+23:18:35,679 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.cxf.deployment.aspect.ResourceResolverDeploymentAspect
+23:18:35,679 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.JAXBIntroDeploymentAspect
+23:18:35,679 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.ContextPropertiesDeploymentAspect
+23:18:35,679 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.metadata.ContainerMetaDataDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.EndpointMetricsDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.BackwardCompatibleContextRootDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.VirtualHostDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.EndpointHandlerDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.EndpointHandlerDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.jbws.NativeInstanceProviderDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.URLPatternDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.EndpointAddressDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.EndpointNameDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.tomcat.WebMetaDataCreatingDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.cxf.deployment.aspect.DescriptorDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.jbws.UnifiedMetaDataDeploymentAspect
+23:18:35,680 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.dmr.ModelDeploymentAspect
+23:18:35,681 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.tomcat.WebMetaDataModifyingDeploymentAspect
+23:18:35,681 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.cxf.deployment.aspect.BusDeploymentAspect
+23:18:35,681 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.jbws.EagerInitializeDeploymentAspect
+23:18:35,681 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.jbws.PublishContractDeploymentAspect
+23:18:35,681 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.jbws.ServiceEndpointInvokerDeploymentAspect
+23:18:35,681 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.cxf.deployment.aspect.CXFInstanceProviderDeploymentAspect
+23:18:35,681 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.injection.InjectionDeploymentAspect
+23:18:35,681 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.deployers.EndpointServiceDeploymentAspect
+23:18:35,681 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 48) Prepared response is {"outcome" => undefined}
+23:18:35,681 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem configadmin succeeded
+23:18:35,682 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem datasources succeeded
+23:18:35,682 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem deployment-scanner succeeded
+23:18:35,682 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem ee succeeded
+23:18:35,682 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem ejb3 succeeded
+23:18:35,682 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem infinispan succeeded
+23:18:35,683 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem jaxrs succeeded
+23:18:35,683 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem jca succeeded
+23:18:35,683 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem jdr succeeded
+23:18:35,683 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem jmx succeeded
+23:18:35,683 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem jpa succeeded
+23:18:35,683 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem mail succeeded
+23:18:35,683 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem naming succeeded
+23:18:35,684 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem osgi succeeded
+23:18:35,684 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem pojo succeeded
+23:18:35,684 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem remoting succeeded
+23:18:35,684 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem resource-adapters succeeded
+23:18:35,684 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem sar succeeded
+23:18:35,684 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem security succeeded
+23:18:35,684 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem threads succeeded
+23:18:35,685 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem transactions succeeded
+23:18:35,685 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem web succeeded
+23:18:35,685 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem webservices succeeded
+23:18:35,685 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem weld succeeded
+23:18:35,685 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Ran subsystem runtime operations in [2210] ms
+23:18:35,692 DEBUG [org.jboss.as.domain.management] (MSC service thread 1-4) Reloading properties file '/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/configuration/mgmt-users.properties'
+23:18:35,693 DEBUG [org.jboss.as.domain.management] (MSC service thread 1-3) Reloading properties file '/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/configuration/application-roles.properties'
+23:18:35,694 DEBUG [org.jboss.as.domain.management] (MSC service thread 1-7) Reloading properties file '/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/configuration/application-users.properties'
+23:18:35,696 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Entered VERIFY stage; waiting for service container to settle
+23:18:35,699 TRACE [org.jboss.as.controller.management-operation] (MSC service thread 1-6) Executing "read-children-names" undefined
+23:18:35,700 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "slf4jtest.war"
+23:18:35,700 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "log4jtest.war"
+23:18:35,702 TRACE [org.jboss.as.controller.management-operation] (MSC service thread 1-6) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:18:35,702 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+23:18:35,710 DEBUG [org.jboss.as.domain.management] (MSC service thread 1-6) Starting 'ManagementRealm' Security Realm Service
+23:18:35,730 DEBUG [org.jboss.as.domain.management] (MSC service thread 1-7) Starting 'ApplicationRealm' Security Realm Service
+23:18:35,773 TRACE [org.jboss.as.server.deployment] (MSC service thread 1-5) Generated index for archive "/content/log4jtest.war/WEB-INF/classes"
+23:18:35,807 TRACE [org.jboss.as.server.deployment] (MSC service thread 1-8) Generated index for archive "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/classes"
+23:18:35,868 TRACE [org.jboss.as.server.deployment] (MSC service thread 1-8) Generated index for archive "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/lib/log4j-1.2.15.jar"
+23:18:35,870 TRACE [org.jboss.as.server.deployment] (MSC service thread 1-8) Generated index for archive "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/lib/jcl-over-slf4j-1.7.2.jar"
+23:18:35,871 TRACE [org.jboss.as.server.deployment] (MSC service thread 1-8) Generated index for archive "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/lib/slf4j-log4j12-1.7.2.jar"
+23:18:35,875 TRACE [org.jboss.as.server.deployment] (MSC service thread 1-8) Generated index for archive "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/lib/slf4j-api-1.7.2.jar"
+23:18:35,876 TRACE [org.jboss.as.jpa] (MSC service thread 1-2) parsed persistence unit definitions for war log4jtest.war
+23:18:35,876 TRACE [org.jboss.as.jpa] (MSC service thread 1-2) incrementing PU count for log4jtest.war by 0
+23:18:35,891 DEBUG [org.jboss.as.jpa] (MSC service thread 1-3) added javax.persistence.api:main dependency to log4jtest.war
+23:18:35,893 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Creating moduledeployment.log4jtest.war:main
+23:18:35,893 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding resource "/content/log4jtest.war/WEB-INF/classes" to module deployment.log4jtest.war:main
+23:18:35,895 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.ejb-client:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,895 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.iiop-client:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,895 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.as.ejb3:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,895 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.resource.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,895 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javaee.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=true] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.hibernate.validator:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=true] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.invocation:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.as.ee:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.faces.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=com.sun.jsf-impl:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.servlet.jstl.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.as.web:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=true] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.ws.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=true, optional=false, importServices=true] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.ws.spi:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=true, optional=false, importServices=true] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.picketbox:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.as.security:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.xml.bind.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=true] to module deployment.log4jtest.war:main
+23:18:35,896 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.persistence.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,897 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=sun.jdk:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=true] to module deployment.log4jtest.war:main
+23:18:35,897 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,897 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.logging:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,897 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.vfs:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,897 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.apache.commons.logging:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,897 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.slf4j:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,897 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.logging.jul-to-slf4j-stub:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,897 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=my.custom.log4j:main, moduleLoader=Service Module Loader, export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,897 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=my.custom.log4j:main, moduleLoader=Service Module Loader, export=false, optional=false, importServices=false] to module deployment.log4jtest.war:main
+23:18:35,900 TRACE [org.jboss.as.server.moduleservice] (MSC service thread 1-4) listenerAdded: Controller for service jboss.module.spec.service."deployment.log4jtest.war".main@587b8be7
+23:18:35,906 TRACE [org.jboss.as.jpa] (MSC service thread 1-6) parsed persistence unit definitions for war slf4jtest.war
+23:18:35,906 TRACE [org.jboss.as.jpa] (MSC service thread 1-6) incrementing PU count for slf4jtest.war by 0
+23:18:35,908 DEBUG [org.jboss.as.jpa] (MSC service thread 1-6) added javax.persistence.api:main dependency to slf4jtest.war
+23:18:35,908 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Creating moduledeployment.slf4jtest.war:main
+23:18:35,908 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding resource "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/classes" to module deployment.slf4jtest.war:main
+23:18:35,908 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding resource "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/lib/log4j-1.2.15.jar" to module deployment.slf4jtest.war:main
+23:18:35,909 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding resource "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/lib/jcl-over-slf4j-1.7.2.jar" to module deployment.slf4jtest.war:main
+23:18:35,909 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding resource "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/lib/slf4j-log4j12-1.7.2.jar" to module deployment.slf4jtest.war:main
+23:18:35,909 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding resource "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/lib/slf4j-api-1.7.2.jar" to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.ejb-client:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.iiop-client:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.as.ejb3:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.resource.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javaee.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=true] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.hibernate.validator:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=true] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.invocation:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.as.ee:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.faces.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=com.sun.jsf-impl:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.servlet.jstl.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.as.web:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=true] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.ws.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=true, optional=false, importServices=true] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.ws.spi:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=true, optional=false, importServices=true] to module deployment.slf4jtest.war:main
+23:18:35,910 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.picketbox:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,911 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.as.security:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,911 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.xml.bind.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=true] to module deployment.slf4jtest.war:main
+23:18:35,911 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.persistence.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,911 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=sun.jdk:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=true] to module deployment.slf4jtest.war:main
+23:18:35,911 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=javax.api:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,911 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.logging:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,911 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.vfs:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,911 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.apache.commons.logging:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,911 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.apache.log4j:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,911 DEBUG [org.jboss.as.server.deployment] (MSC service thread 1-1) Adding dependency ModuleDependency [identifier=org.jboss.logging.jul-to-slf4j-stub:main, moduleLoader=local module loader @4b0ab323 (roots: /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules), export=false, optional=false, importServices=false] to module deployment.slf4jtest.war:main
+23:18:35,912 TRACE [org.jboss.as.server.moduleservice] (MSC service thread 1-5) listenerAdded: Controller for service jboss.module.spec.service."deployment.slf4jtest.war".main@27d08e21
+23:18:36,106 TRACE [org.jboss.as.logging] (MSC service thread 1-6) Scanning for logging configuration files.
+23:18:36,121 DEBUG [org.jboss.as.logging] (MSC service thread 1-6) Found logging configuration file: "/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments/slf4jtest.war/WEB-INF/classes/jboss-log4j.xml"
+23:18:36,126 TRACE [org.jboss.as.logging] (MSC service thread 1-5) Scanning for logging configuration files.
+23:18:36,129 TRACE [org.jboss.as.naming] (MSC service thread 1-2) Bound resource ModuleName into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@3e3e3c83 (service name service jboss.naming.context.java.module.log4jtest.log4jtest.ModuleName)
+23:18:36,129 TRACE [org.jboss.as.naming] (MSC service thread 1-5) Bound resource ValidatorFactory into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@3e3e3c83 (service name service jboss.naming.context.java.module.log4jtest.log4jtest.ValidatorFactory)
+23:18:36,129 TRACE [org.jboss.as.naming] (MSC service thread 1-8) Bound resource Validator into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@3e3e3c83 (service name service jboss.naming.context.java.module.log4jtest.log4jtest.Validator)
+23:18:36,129 TRACE [org.jboss.as.naming] (MSC service thread 1-3) Bound resource AppName into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@24164d75 (service name service jboss.naming.context.java.app.log4jtest.AppName)
+23:18:36,130 DEBUG [org.jboss.as.ejb3.deployment.processors.EjbClientContextSetupProcessor] (MSC service thread 1-8) Deployment unit deployment "log4jtest.war" doesn't have any explicit EJB client context configured. Falling back on the default service jboss.ejb3.ejbClientContext.default EJB client context service
+23:18:36,130 DEBUG [org.jboss.as.ejb3.deployment.processors.EjbClientContextSetupProcessor] (MSC service thread 1-8) Registering EJB client context null for classloader ModuleClassLoader for Module "deployment.log4jtest.war:main" from Service Module Loader
+23:18:36,139 DEBUG [org.jboss.as.ee] (MSC service thread 1-8) Configuring component class: javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV named javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV
+23:18:36,146 DEBUG [org.jboss.as.ee] (MSC service thread 1-8) Configuring component class: org.apache.catalina.servlets.DefaultServlet named org.apache.catalina.servlets.DefaultServlet
+23:18:36,146 DEBUG [org.jboss.as.ee] (MSC service thread 1-8) Configuring component class: javax.faces.webapp.FacetTag named javax.faces.webapp.FacetTag
+23:18:36,146 DEBUG [org.jboss.as.ee] (MSC service thread 1-8) Configuring component class: com.sun.faces.config.ConfigureListener named com.sun.faces.config.ConfigureListener
+23:18:36,146 DEBUG [org.jboss.as.ee] (MSC service thread 1-8) Configuring component class: com.test.Mylog4jTest.TestLog named com.test.Mylog4jTest.TestLog
+23:18:36,146 DEBUG [org.jboss.as.ee] (MSC service thread 1-8) Configuring component class: javax.servlet.jsp.jstl.tlv.ScriptFreeTLV named javax.servlet.jsp.jstl.tlv.ScriptFreeTLV
+23:18:36,147 DEBUG [org.jboss.as.ee] (MSC service thread 1-8) Configuring component class: org.apache.jasper.servlet.JspServlet named org.apache.jasper.servlet.JspServlet
+23:18:36,150 TRACE [org.jboss.as.ee] (MSC service thread 1-8) Installing component javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV
+23:18:36,153 TRACE [org.jboss.as.ee] (MSC service thread 1-8) Installing component org.apache.catalina.servlets.DefaultServlet
+23:18:36,154 TRACE [org.jboss.as.ee] (MSC service thread 1-8) Installing component javax.faces.webapp.FacetTag
+23:18:36,155 TRACE [org.jboss.as.ee] (MSC service thread 1-8) Installing component com.sun.faces.config.ConfigureListener
+23:18:36,155 TRACE [org.jboss.as.ee] (MSC service thread 1-8) Installing component com.test.Mylog4jTest.TestLog
+23:18:36,156 TRACE [org.jboss.as.ee] (MSC service thread 1-8) Installing component javax.servlet.jsp.jstl.tlv.ScriptFreeTLV
+23:18:36,157 TRACE [org.jboss.as.ee] (MSC service thread 1-8) Installing component org.apache.jasper.servlet.JspServlet
+23:18:36,369 DEBUG [org.jboss.as.osgi] (MSC service thread 1-1) Initial deployment tracked: jboss.deployment.unit."log4jtest.war".INSTALL (remaining=1)
+23:18:36,370 TRACE [org.jboss.as.naming] (MSC service thread 1-3) Bound resource env into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@24164d75 (service name service jboss.naming.context.java.app.log4jtest.env)
+23:18:36,370 TRACE [org.jboss.as.naming] (MSC service thread 1-5) Bound resource env into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@3e3e3c83 (service name service jboss.naming.context.java.module.log4jtest.log4jtest.env)
+23:18:36,384 DEBUG [org.jboss.as.security] (MSC service thread 1-1) Cannot create permissions with 'null' metaData for id=log4jtest.war
+23:18:36,397 TRACE [org.jboss.as.naming] (MSC service thread 1-6) Bound resource AppName into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@5f8a8ae7 (service name service jboss.naming.context.java.app.slf4jtest.AppName)
+23:18:36,397 TRACE [org.jboss.as.naming] (MSC service thread 1-5) Bound resource ValidatorFactory into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@ae3865e (service name service jboss.naming.context.java.module.slf4jtest.slf4jtest.ValidatorFactory)
+23:18:36,398 TRACE [org.jboss.as.naming] (MSC service thread 1-5) Bound resource ModuleName into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@ae3865e (service name service jboss.naming.context.java.module.slf4jtest.slf4jtest.ModuleName)
+23:18:36,398 TRACE [org.jboss.as.naming] (MSC service thread 1-4) Bound resource Validator into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@ae3865e (service name service jboss.naming.context.java.module.slf4jtest.slf4jtest.Validator)
+23:18:36,398 DEBUG [org.jboss.as.ejb3.deployment.processors.EjbClientContextSetupProcessor] (MSC service thread 1-1) Deployment unit deployment "slf4jtest.war" doesn't have any explicit EJB client context configured. Falling back on the default service jboss.ejb3.ejbClientContext.default EJB client context service
+23:18:36,399 DEBUG [org.jboss.as.ejb3.deployment.processors.EjbClientContextSetupProcessor] (MSC service thread 1-1) Registering EJB client context null for classloader ModuleClassLoader for Module "deployment.slf4jtest.war:main" from Service Module Loader
+23:18:36,399 DEBUG [org.jboss.as.ee] (MSC service thread 1-1) Configuring component class: javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV named javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV
+23:18:36,399 DEBUG [org.jboss.as.ee] (MSC service thread 1-1) Configuring component class: org.apache.catalina.servlets.DefaultServlet named org.apache.catalina.servlets.DefaultServlet
+23:18:36,400 DEBUG [org.jboss.as.ee] (MSC service thread 1-1) Configuring component class: javax.faces.webapp.FacetTag named javax.faces.webapp.FacetTag
+23:18:36,400 DEBUG [org.jboss.as.ee] (MSC service thread 1-1) Configuring component class: com.sun.faces.config.ConfigureListener named com.sun.faces.config.ConfigureListener
+23:18:36,400 DEBUG [org.jboss.as.ee] (MSC service thread 1-1) Configuring component class: javax.servlet.jsp.jstl.tlv.ScriptFreeTLV named javax.servlet.jsp.jstl.tlv.ScriptFreeTLV
+23:18:36,400 DEBUG [org.jboss.as.ee] (MSC service thread 1-1) Configuring component class: com.test.Myslf4jTest.TestLog named com.test.Myslf4jTest.TestLog
+23:18:36,400 DEBUG [org.jboss.as.ee] (MSC service thread 1-1) Configuring component class: org.apache.jasper.servlet.JspServlet named org.apache.jasper.servlet.JspServlet
+23:18:36,401 TRACE [org.jboss.as.ee] (MSC service thread 1-1) Installing component javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV
+23:18:36,401 TRACE [org.jboss.as.ee] (MSC service thread 1-1) Installing component org.apache.catalina.servlets.DefaultServlet
+23:18:36,402 TRACE [org.jboss.as.ee] (MSC service thread 1-1) Installing component javax.faces.webapp.FacetTag
+23:18:36,403 TRACE [org.jboss.as.ee] (MSC service thread 1-1) Installing component com.sun.faces.config.ConfigureListener
+23:18:36,404 TRACE [org.jboss.as.ee] (MSC service thread 1-1) Installing component javax.servlet.jsp.jstl.tlv.ScriptFreeTLV
+23:18:36,404 TRACE [org.jboss.as.ee] (MSC service thread 1-1) Installing component com.test.Myslf4jTest.TestLog
+23:18:36,405 TRACE [org.jboss.as.ee] (MSC service thread 1-1) Installing component org.apache.jasper.servlet.JspServlet
+23:18:36,410 DEBUG [org.jboss.as.osgi] (MSC service thread 1-2) Initial deployment tracked: jboss.deployment.unit."slf4jtest.war".INSTALL (remaining=0)
+23:18:36,410 TRACE [org.jboss.as.osgi] (MSC service thread 1-2) Initial deployments complete
+23:18:36,412 TRACE [org.jboss.as.naming] (MSC service thread 1-4) Bound resource env into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@ae3865e (service name service jboss.naming.context.java.module.slf4jtest.slf4jtest.env)
+23:18:36,412 DEBUG [org.jboss.as.security] (MSC service thread 1-4) Cannot create permissions with 'null' metaData for id=slf4jtest.war
+23:18:36,412 TRACE [org.jboss.as.osgi] (MSC service thread 1-1) Starting: service jboss.osgi.as.initial.deployments.COMPLETE in mode ACTIVE
+23:18:36,412 TRACE [org.jboss.as.naming] (MSC service thread 1-6) Bound resource env into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@5f8a8ae7 (service name service jboss.naming.context.java.app.slf4jtest.env)
+23:18:40,033 DEBUG [org.jboss.as.osgi] (Controller Boot Thread) BundleContext not available for management operation
+23:18:40,035 TRACE [org.jboss.as.controller.management-operation] (Controller Boot Thread) Prepared response is {"outcome" => undefined}
+23:18:40,035 TRACE [org.jboss.as.controller.client] (Controller Boot Thread) JBAS014752: Operation succeeded, committing
+23:18:40,036 TRACE [org.jboss.as.controller.client] (Controller Boot Thread) JBAS014752: Operation succeeded, committing
+23:18:40,036 TRACE [org.jboss.as.controller.client] (Controller Boot Thread) JBAS014752: Operation succeeded, committing
+23:18:40,036 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for configadmin subsystem MODEL stage boot operations
+23:18:40,036 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for datasources subsystem MODEL stage boot operations
+23:18:40,036 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for deployment-scanner subsystem MODEL stage boot operations
+23:18:40,036 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for ee subsystem MODEL stage boot operations
+23:18:40,036 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for ejb3 subsystem MODEL stage boot operations
+23:18:40,036 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for infinispan subsystem MODEL stage boot operations
+23:18:40,036 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jaxrs subsystem MODEL stage boot operations
+23:18:40,036 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jca subsystem MODEL stage boot operations
+23:18:40,036 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jdr subsystem MODEL stage boot operations
+23:18:40,036 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jmx subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jpa subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for mail subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for naming subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for osgi subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for pojo subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for remoting subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for resource-adapters subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for sar subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for security subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for threads subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for transactions subsystem MODEL stage boot operations
+23:18:40,037 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for web subsystem MODEL stage boot operations
+23:18:40,038 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for webservices subsystem MODEL stage boot operations
+23:18:40,038 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for weld subsystem MODEL stage boot operations
+23:18:40,038 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 45) JBAS014752: Operation succeeded, committing
+23:18:40,038 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 26) JBAS014752: Operation succeeded, committing
+23:18:40,038 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 26) JBAS014752: Operation succeeded, committing
+23:18:40,038 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 34) JBAS014752: Operation succeeded, committing
+23:18:40,038 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 28) JBAS014752: Operation succeeded, committing
+23:18:40,038 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 34) JBAS014752: Operation succeeded, committing
+23:18:40,038 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 35) JBAS014752: Operation succeeded, committing
+23:18:40,038 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 35) JBAS014752: Operation succeeded, committing
+23:18:40,038 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 42) JBAS014752: Operation succeeded, committing
+23:18:40,038 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 43) JBAS014752: Operation succeeded, committing
+23:18:40,039 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 43) JBAS014752: Operation succeeded, committing
+23:18:40,038 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "log4jtest.war"
+23:18:40,039 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 28) JBAS014752: Operation succeeded, committing
+23:18:40,039 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "slf4jtest.war"
+23:18:40,039 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 28) JBAS014752: Operation succeeded, committing
+23:18:40,039 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 37) JBAS014752: Operation succeeded, committing
+23:18:40,039 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 37) JBAS014752: Operation succeeded, committing
+23:18:40,039 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 49) JBAS014752: Operation succeeded, committing
+23:18:40,039 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 33) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 49) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 33) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 33) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 29) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 39) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 29) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 39) JBAS014752: Operation succeeded, committing
+23:18:40,039 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 41) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 39) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 27) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 36) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 46) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 27) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 36) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 32) JBAS014752: Operation succeeded, committing
+23:18:40,039 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 38) JBAS014752: Operation succeeded, committing
+23:18:40,039 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 40) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 32) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 38) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 27) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 46) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 31) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 47) JBAS014752: Operation succeeded, committing
+23:18:40,040 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 41) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 31) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 48) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 47) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 48) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 40) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 30) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 30) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 30) JBAS014752: Operation succeeded, committing
+23:18:40,041 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 30) JBAS014752: Operation succeeded, committing
+23:18:40,042 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jbosgi.Environment (missing) dependents: [service jboss.osgi.as.module.registration."deployment.slf4jtest.war:main", service jboss.osgi.as.module.registration."deployment.log4jtest.war:main"] 
+JBAS014777:   Services which failed to start:      service jboss.network.management: org.jboss.msc.service.StartException in service jboss.network.management: JBAS015810: failed to resolve interface management
+      service jboss.network.public: org.jboss.msc.service.StartException in service jboss.network.public: JBAS015810: failed to resolve interface public
+
+23:18:40,043 TRACE [org.jboss.as.controller.client] (Controller Boot Thread) JBAS014752: Operation succeeded, committing
+23:18:40,043 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for logging subsystem RUNTIME stage boot operations
+23:18:40,043 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for configadmin subsystem RUNTIME stage boot operations
+23:18:40,043 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for datasources subsystem RUNTIME stage boot operations
+23:18:40,043 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for deployment-scanner subsystem RUNTIME stage boot operations
+23:18:40,043 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for ee subsystem RUNTIME stage boot operations
+23:18:40,043 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for ejb3 subsystem RUNTIME stage boot operations
+23:18:40,044 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for infinispan subsystem RUNTIME stage boot operations
+23:18:40,044 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jaxrs subsystem RUNTIME stage boot operations
+23:18:40,044 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jca subsystem RUNTIME stage boot operations
+23:18:40,044 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jdr subsystem RUNTIME stage boot operations
+23:18:40,044 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jmx subsystem RUNTIME stage boot operations
+23:18:40,044 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jpa subsystem RUNTIME stage boot operations
+23:18:40,044 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for mail subsystem RUNTIME stage boot operations
+23:18:40,044 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for naming subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for osgi subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for pojo subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for remoting subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for resource-adapters subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for sar subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for security subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for threads subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for transactions subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for web subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for webservices subsystem RUNTIME stage boot operations
+23:18:40,045 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for weld subsystem RUNTIME stage boot operations
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 25) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 20) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 25) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 20) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 24) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 24) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 16) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 22) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 14) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 16) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 13) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 14) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 4) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 22) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 13) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 1) JBAS014752: Operation succeeded, committing
+23:18:40,046 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 4) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 1) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 8) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 8) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 15) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 11) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 11) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 21) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 10) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 10) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 6) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 6) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 18) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 18) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 7) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 23) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 15) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 2) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 12) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 2) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 5) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 17) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 21) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 5) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 17) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 21) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 12) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 23) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:18:40,047 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 7) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:18:40,048 TRACE [org.jboss.as.controller.client] (Controller Boot Thread) JBAS014752: Operation succeeded, committing
+23:18:40,049 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:18:40,050 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:18:40,050 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:18:40,051 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:18:40,052 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:18:40,266 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+23:18:40,266 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started (with errors) in 12073ms - Started 162 of 275 services (59 services failed or missing dependencies, 53 services are passive or on-demand)
+23:18:45,052 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:18:45,052 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:18:45,054 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:18:45,056 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:18:50,056 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:18:50,056 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:18:50,058 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:18:50,059 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:18:55,059 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:18:55,060 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:18:55,063 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:18:55,065 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:19:00,065 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:00,066 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:19:00,067 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:00,070 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:19:05,070 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:05,070 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:19:05,072 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:05,073 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:19:10,074 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:10,074 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:19:10,083 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:10,084 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:19:15,085 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:15,085 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:19:15,091 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:15,093 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:19:20,093 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:20,093 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:19:20,099 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:20,101 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:19:25,101 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:25,102 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:19:25,146 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:25,147 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:19:30,147 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:30,148 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:19:30,149 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:30,151 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:19:35,151 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:35,152 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:19:35,152 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:35,153 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:19:40,154 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:40,154 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:19:40,160 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:40,162 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:19:45,162 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:45,163 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:19:45,171 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:45,172 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:19:50,173 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:50,173 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:19:50,182 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:50,183 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:19:55,183 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:19:55,184 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:19:55,191 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:19:55,192 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:20:00,192 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:00,193 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:20:00,199 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:20:00,201 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:20:05,201 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:05,202 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:20:05,203 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => [
+        "log4jtest.war",
+        "slf4jtest.war"
+    ]
+}
+23:20:05,208 DEBUG [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Deployment scan of [/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments] found update action [{
+    "operation" => "composite",
+    "address" => undefined,
+    "steps" => [
+        {
+            "operation" => "undeploy",
+            "address" => [("deployment" => "slf4jtest.war")]
+        },
+        {
+            "operation" => "remove",
+            "address" => [("deployment" => "slf4jtest.war")]
+        }
+    ]
+}]
+23:20:05,208 DEBUG [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Deployment scan of [/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments] found update action [{
+    "operation" => "composite",
+    "address" => undefined,
+    "steps" => [
+        {
+            "operation" => "undeploy",
+            "address" => [("deployment" => "log4jtest.war")]
+        },
+        {
+            "operation" => "remove",
+            "address" => [("deployment" => "log4jtest.war")]
+        }
+    ]
+}]
+23:20:05,209 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "composite" undefined
+23:20:05,215 DEBUG [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Entered VERIFY stage; waiting for service container to settle
+23:20:05,235 TRACE [org.jboss.as.server.moduleservice] (MSC service thread 1-5) serviceStopping: Controller for service jboss.module.spec.service."deployment.log4jtest.war".main@587b8be7
+23:20:05,236 TRACE [org.jboss.as.server.moduleservice] (MSC service thread 1-4) serviceStopping: Controller for service jboss.module.spec.service."deployment.slf4jtest.war".main@27d08e21
+23:20:05,240 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment log4jtest.war in 25ms
+23:20:05,242 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment slf4jtest.war in 27ms
+23:20:05,248 DEBUG [org.jboss.as.osgi] (DeploymentScanner-threads - 2) BundleContext not available for management operation
+23:20:05,275 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {"outcome" => undefined}
+23:20:05,353 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "log4jtest.war"
+23:20:05,354 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "slf4jtest.war"
+23:20:05,354 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014776:    Newly corrected services:
+      service jbosgi.Environment (new available)
+
+23:20:05,355 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:20:10,356 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:10,356 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:20:10,362 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:10,362 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:20:15,363 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:15,363 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:20:15,369 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:15,370 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:20:20,370 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:20,370 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:20:20,379 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:20,379 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:20:25,379 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:25,380 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:20:25,383 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:25,384 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:20:30,384 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:30,385 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:20:30,386 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:30,386 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:20:35,386 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:35,387 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:20:35,399 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:35,400 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:20:40,400 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:40,400 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:20:40,406 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:40,406 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:20:49,458 DEBUG [org.jboss.as.configadmin] (MSC service thread 1-5) Starting: service jboss.configadmin in mode ACTIVE
+23:20:49,462 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 28) Prepared response is {"outcome" => undefined}
+23:20:49,472 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+23:20:49,473 DEBUG [org.jboss.as.ee] (ServerService Thread Pool -- 29) Activating EE subsystem
+23:20:49,489 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 34) Prepared response is {"outcome" => undefined}
+23:20:49,513 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 42) Prepared response is null
+23:20:49,514 DEBUG [org.jboss.as.remoting] (MSC service thread 1-7) Registering channel listener for management
+23:20:49,517 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+23:20:49,515 TRACE [org.jboss.as.mail.extension.MailSessionService] (ServerService Thread Pool -- 37) service constructed with config: MailSessionConfig{imapServer=null, jndiName='java:jboss/mail/Default', smtpServer=org.jboss.as.mail.extension.MailSessionServer@15e0a283, pop3Server=null}
+23:20:49,521 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 45) Prepared response is null
+23:20:49,523 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+23:20:49,522 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+23:20:49,525 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 41) Prepared response is {"outcome" => undefined}
+23:20:49,539 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 32) Prepared response is {"outcome" => undefined}
+23:20:49,539 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 40) Prepared response is {"outcome" => undefined}
+23:20:49,541 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 43) Prepared response is {"outcome" => undefined}
+23:20:49,542 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 35) Prepared response is {"outcome" => undefined}
+23:20:49,549 TRACE [org.jboss.as.controller.management-operation] (MSC service thread 1-6) Executing "read-attribute" []
+23:20:49,556 DEBUG [org.jboss.as.osgi] (ServerService Thread Pool -- 39) BundleContext not available for management operation
+23:20:49,557 TRACE [org.jboss.as.controller.management-operation] (MSC service thread 1-6) Prepared response is {
+    "outcome" => undefined,
+    "result" => "STANDALONE"
+}
+23:20:49,559 DEBUG [org.jboss.as.security] (MSC service thread 1-4) Starting SecurityBootstrapService
+23:20:49,559 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+23:20:49,562 DEBUG [org.jboss.as.txn] (ServerService Thread Pool -- 46) nodeIdentifier=1
+
+23:20:49,562 DEBUG [org.jboss.as.txn] (ServerService Thread Pool -- 46) varDirPathRef=jboss.server.data.dir, varDirPath=var
+
+23:20:49,562 INFO  [org.jboss.as.security] (MSC service thread 1-4) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+23:20:49,571 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-1) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+23:20:49,575 DEBUG [org.jboss.as.deployment.connector.registry] (MSC service thread 1-8) Starting service service jboss.jdbc-driver.registry
+23:20:49,576 DEBUG [org.jboss.as.connector.services.mdr] (MSC service thread 1-8) Starting service MDR
+23:20:49,572 TRACE [org.jboss.as.connector.logging] (MSC service thread 1-1) config=org.jboss.as.connector.subsystems.jca.JcaSubsystemConfiguration@7cd47880
+23:20:49,578 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 36) Prepared response is {"outcome" => undefined}
+23:20:49,579 TRACE [org.jboss.as.osgi] (ServerService Thread Pool -- 39) Initial deployments complete
+23:20:49,580 TRACE [org.jboss.as.osgi] (MSC service thread 1-3) Starting: service jboss.osgi.as.initial.deployments.COMPLETE in mode ACTIVE
+23:20:49,590 DEBUG [org.jboss.as.security] (MSC service thread 1-1) Starting SecurityManagementService
+23:20:49,590 DEBUG [org.jboss.as.security] (MSC service thread 1-8) Starting JaasConfigurationService
+23:20:49,590 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) hibernate cache container installed
+23:20:49,596 DEBUG [org.jboss.as.connector.logging] (MSC service thread 1-3) started ManagementRepositoryService service jboss.management_repository
+23:20:49,601 DEBUG [org.jboss.as.security] (MSC service thread 1-1) Starting SubjectFactoryService
+23:20:49,601 DEBUG [org.jboss.as.connector.services.mdr] (MSC service thread 1-2) Starting service RaRepositoryService
+23:20:49,602 DEBUG [org.jboss.as.deployment.connector.registry] (MSC service thread 1-8) Starting sevice service jboss.raregistry
+23:20:49,602 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 37) Prepared response is {"outcome" => undefined}
+23:20:49,607 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+23:20:49,613 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 49) Prepared response is {"outcome" => undefined}
+23:20:49,617 DEBUG [org.jboss.as.connector.logging] (ServerService Thread Pool -- 33) Building WorkManager
+23:20:49,620 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+23:20:49,621 TRACE [org.jboss.as.deployment.connector.registry] (MSC service thread 1-1) Adding driver: com.h2database.h2:main:org.h2.Driver#1#3
+23:20:49,622 TRACE [org.jboss.as.naming] (MSC service thread 1-1) Bound resource jaas into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@4e26d560 (service name service jboss.naming.context.java.jboss.jaas)
+23:20:49,622 TRACE [org.jboss.as.naming] (MSC service thread 1-4) Bound resource mail/Default into naming store org.jboss.as.naming.WritableServiceBasedNamingStore@4e26d560 (service name service jboss.naming.context.java.jboss.mail.Default)
+23:20:49,625 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+23:20:49,628 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 29) Prepared response is {"outcome" => undefined}
+23:20:49,630 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 27) Prepared response is {"outcome" => undefined}
+23:20:49,635 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 39) Prepared response is {"outcome" => undefined}
+23:20:49,650 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 38) Prepared response is {"outcome" => undefined}
+23:20:49,655 DEBUG [org.jboss.as.connector.logging] (ServerService Thread Pool -- 33) Building DefaultBootstrapContext
+23:20:49,664 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-6) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+23:20:49,666 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Loading Infinispan defaults from jar:file:/home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules/org/jboss/as/clustering/infinispan/main/jboss-as-clustering-infinispan-7.1.2.Final-redhat-1.jar!/infinispan-defaults.xml
+23:20:49,675 DEBUG [org.jboss.as.connector.logging] (MSC service thread 1-1) Starting JCA WorkManager
+23:20:49,680 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 33) Prepared response is {"outcome" => undefined}
+23:20:49,696 DEBUG [org.jboss.as.txn] (ServerService Thread Pool -- 46) objectStorePathRef=jboss.server.data.dir, objectStorePath=tx-object-store
+
+23:20:49,710 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 44) Prepared response is {"outcome" => undefined}
+23:20:49,721 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 46) Prepared response is {"outcome" => undefined}
+23:20:49,803 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.cxf.deployment.aspect.ResourceResolverDeploymentAspect
+23:20:49,804 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.deployers.EndpointRecordProcessorDeploymentAspect
+23:20:49,804 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.ContextPropertiesDeploymentAspect
+23:20:49,804 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.metadata.ContainerMetaDataDeploymentAspect
+23:20:49,804 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.EndpointMetricsDeploymentAspect
+23:20:49,804 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.JAXBIntroDeploymentAspect
+23:20:49,804 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.ContextPropertiesDeploymentAspect
+23:20:49,804 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.BackwardCompatibleContextRootDeploymentAspect
+23:20:49,804 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.VirtualHostDeploymentAspect
+23:20:49,805 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.EndpointHandlerDeploymentAspect
+23:20:49,805 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.EndpointHandlerDeploymentAspect
+23:20:49,805 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.jbws.NativeInstanceProviderDeploymentAspect
+23:20:49,805 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.URLPatternDeploymentAspect
+23:20:49,805 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.EndpointAddressDeploymentAspect
+23:20:49,805 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.ws.common.deployment.EndpointNameDeploymentAspect
+23:20:49,805 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.tomcat.WebMetaDataCreatingDeploymentAspect
+23:20:49,805 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.cxf.deployment.aspect.DescriptorDeploymentAspect
+23:20:49,806 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.jbws.UnifiedMetaDataDeploymentAspect
+23:20:49,806 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.dmr.ModelDeploymentAspect
+23:20:49,806 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.tomcat.WebMetaDataModifyingDeploymentAspect
+23:20:49,806 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.cxf.deployment.aspect.BusDeploymentAspect
+23:20:49,806 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.jbws.EagerInitializeDeploymentAspect
+23:20:49,806 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.jbws.PublishContractDeploymentAspect
+23:20:49,806 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.jbws.ServiceEndpointInvokerDeploymentAspect
+23:20:49,806 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.wsf.stack.cxf.deployment.aspect.CXFInstanceProviderDeploymentAspect
+23:20:49,806 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.injection.InjectionDeploymentAspect
+23:20:49,807 TRACE [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015538: Installing aspect org.jboss.as.webservices.deployers.EndpointServiceDeploymentAspect
+23:20:49,807 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 48) Prepared response is {"outcome" => undefined}
+23:20:49,820 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache configuration service for entity installed for container hibernate
+23:20:49,825 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache service for cache entity installed for container hibernate
+23:20:49,827 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache configuration service for local-query installed for container hibernate
+23:20:49,828 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache service for cache local-query installed for container hibernate
+23:20:49,832 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache configuration service for timestamps installed for container hibernate
+23:20:49,833 DEBUG [org.jboss.as.clustering.infinispan.subsystem] (ServerService Thread Pool -- 31) Cache service for cache timestamps installed for container hibernate
+23:20:49,833 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 31) Prepared response is {"outcome" => undefined}
+23:20:49,847 DEBUG [org.jboss.as.ejb3] (ServerService Thread Pool -- 30) Adding EJB @Asynchronous support
+23:20:49,848 DEBUG [org.jboss.as.ejb3] (ServerService Thread Pool -- 30) Configuring timers
+23:20:49,850 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 30) Prepared response is {"outcome" => undefined}
+23:20:49,959 TRACE [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 47) Prepared response is {"outcome" => undefined}
+23:20:49,959 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem configadmin succeeded
+23:20:49,959 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem datasources succeeded
+23:20:49,959 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem deployment-scanner succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem ee succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem ejb3 succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem infinispan succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem jaxrs succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem jca succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem jdr succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem jmx succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem jpa succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem mail succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem naming succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem osgi succeeded
+23:20:49,960 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem pojo succeeded
+23:20:49,961 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem remoting succeeded
+23:20:49,961 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem resource-adapters succeeded
+23:20:49,961 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem sar succeeded
+23:20:49,961 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem security succeeded
+23:20:49,961 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem threads succeeded
+23:20:49,961 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem transactions succeeded
+23:20:49,961 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem web succeeded
+23:20:49,961 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem webservices succeeded
+23:20:49,961 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Stage RUNTIME boot ops for subsystem weld succeeded
+23:20:49,961 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Ran subsystem runtime operations in [510] ms
+23:20:49,968 DEBUG [org.jboss.as.domain.management] (MSC service thread 1-3) Reloading properties file '/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/configuration/mgmt-users.properties'
+23:20:49,969 DEBUG [org.jboss.as.domain.management] (MSC service thread 1-3) Starting 'ManagementRealm' Security Realm Service
+23:20:49,970 DEBUG [org.jboss.as.domain.management] (MSC service thread 1-3) Reloading properties file '/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/configuration/application-roles.properties'
+23:20:49,970 DEBUG [org.jboss.as.domain.management] (MSC service thread 1-3) Reloading properties file '/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/configuration/application-users.properties'
+23:20:49,971 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Entered VERIFY stage; waiting for service container to settle
+23:20:49,971 DEBUG [org.jboss.as.domain.management] (MSC service thread 1-7) Starting 'ApplicationRealm' Security Realm Service
+23:20:49,972 TRACE [org.jboss.as.controller.management-operation] (MSC service thread 1-4) Executing "read-children-names" undefined
+23:20:49,975 TRACE [org.jboss.as.controller.management-operation] (MSC service thread 1-4) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:49,976 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:49,976 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:20:49,977 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:49,977 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:20:49,978 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+23:20:53,795 DEBUG [org.jboss.as.osgi] (Controller Boot Thread) BundleContext not available for management operation
+23:20:53,796 TRACE [org.jboss.as.controller.management-operation] (Controller Boot Thread) Prepared response is {"outcome" => undefined}
+23:20:53,796 TRACE [org.jboss.as.controller.client] (Controller Boot Thread) JBAS014752: Operation succeeded, committing
+23:20:53,796 TRACE [org.jboss.as.controller.client] (Controller Boot Thread) JBAS014752: Operation succeeded, committing
+23:20:53,796 TRACE [org.jboss.as.controller.client] (Controller Boot Thread) JBAS014752: Operation succeeded, committing
+23:20:53,796 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for configadmin subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for datasources subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for deployment-scanner subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for ee subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for ejb3 subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for infinispan subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jaxrs subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jca subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jdr subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jmx subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jpa subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for mail subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for naming subsystem MODEL stage boot operations
+23:20:53,797 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for osgi subsystem MODEL stage boot operations
+23:20:53,798 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for pojo subsystem MODEL stage boot operations
+23:20:53,798 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for remoting subsystem MODEL stage boot operations
+23:20:53,798 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for resource-adapters subsystem MODEL stage boot operations
+23:20:53,798 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for sar subsystem MODEL stage boot operations
+23:20:53,798 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for security subsystem MODEL stage boot operations
+23:20:53,798 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for threads subsystem MODEL stage boot operations
+23:20:53,798 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for transactions subsystem MODEL stage boot operations
+23:20:53,798 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for web subsystem MODEL stage boot operations
+23:20:53,798 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for webservices subsystem MODEL stage boot operations
+23:20:53,798 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for weld subsystem MODEL stage boot operations
+23:20:53,798 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 26) JBAS014752: Operation succeeded, committing
+23:20:53,798 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 34) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 26) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 34) JBAS014752: Operation succeeded, committing
+23:20:53,798 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 28) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 45) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 32) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 40) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 35) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 32) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 42) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 40) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 43) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 41) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 36) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 43) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 41) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 36) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 27) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 27) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 27) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 28) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 46) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 48) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 31) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 48) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 33) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 31) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 47) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 38) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 39) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 47) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 38) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 29) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 49) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 37) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 29) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 35) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 49) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 39) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 33) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 30) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 33) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 46) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 30) JBAS014752: Operation succeeded, committing
+23:20:53,799 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 39) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 37) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 30) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 30) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:20:53,800 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:20:53,801 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 44) JBAS014752: Operation succeeded, committing
+23:20:53,801 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.network.management: org.jboss.msc.service.StartException in service jboss.network.management: JBAS015810: failed to resolve interface management
+      service jboss.network.public: org.jboss.msc.service.StartException in service jboss.network.public: JBAS015810: failed to resolve interface public
+
+23:20:53,801 TRACE [org.jboss.as.controller.client] (Controller Boot Thread) JBAS014752: Operation succeeded, committing
+23:20:53,801 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for logging subsystem RUNTIME stage boot operations
+23:20:53,801 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for configadmin subsystem RUNTIME stage boot operations
+23:20:53,801 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for datasources subsystem RUNTIME stage boot operations
+23:20:53,801 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for deployment-scanner subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for ee subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for ejb3 subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for infinispan subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jaxrs subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jca subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jdr subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jmx subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for jpa subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for mail subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for naming subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for osgi subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for pojo subsystem RUNTIME stage boot operations
+23:20:53,802 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for remoting subsystem RUNTIME stage boot operations
+23:20:53,803 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for resource-adapters subsystem RUNTIME stage boot operations
+23:20:53,803 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for sar subsystem RUNTIME stage boot operations
+23:20:53,803 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for security subsystem RUNTIME stage boot operations
+23:20:53,803 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for threads subsystem RUNTIME stage boot operations
+23:20:53,803 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for transactions subsystem RUNTIME stage boot operations
+23:20:53,803 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for web subsystem RUNTIME stage boot operations
+23:20:53,803 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for webservices subsystem RUNTIME stage boot operations
+23:20:53,803 DEBUG [org.jboss.as.controller.management-operation] (Controller Boot Thread) Committed transaction for weld subsystem RUNTIME stage boot operations
+23:20:53,803 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 16) JBAS014752: Operation succeeded, committing
+23:20:53,803 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 5) JBAS014752: Operation succeeded, committing
+23:20:53,803 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 16) JBAS014752: Operation succeeded, committing
+23:20:53,803 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 5) JBAS014752: Operation succeeded, committing
+23:20:53,803 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 6) JBAS014752: Operation succeeded, committing
+23:20:53,803 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 4) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 6) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 10) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 4) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 10) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 8) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 14) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 8) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 14) JBAS014752: Operation succeeded, committing
+23:20:53,803 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 12) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 12) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 12) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 19) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 15) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 1) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 15) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 1) JBAS014752: Operation succeeded, committing
+23:20:53,803 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 2) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 2) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 13) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 13) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 11) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 20) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 11) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 3) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 21) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 17) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 21) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 17) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 24) JBAS014752: Operation succeeded, committing
+23:20:53,804 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 18) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 24) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 18) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 22) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 22) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 7) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 7) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 20) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 25) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 23) JBAS014752: Operation succeeded, committing
+23:20:53,805 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:20:53,806 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 25) JBAS014752: Operation succeeded, committing
+23:20:53,806 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 23) JBAS014752: Operation succeeded, committing
+23:20:53,806 TRACE [org.jboss.as.controller.client] (ServerService Thread Pool -- 9) JBAS014752: Operation succeeded, committing
+23:20:53,806 TRACE [org.jboss.as.controller.client] (Controller Boot Thread) JBAS014752: Operation succeeded, committing
+23:20:53,902 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+23:20:53,902 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started (with errors) in 5578ms - Started 103 of 187 services (34 services failed or missing dependencies, 49 services are passive or on-demand)
+23:20:54,978 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:54,978 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:20:54,979 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:54,980 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:20:59,980 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:20:59,980 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:20:59,982 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:20:59,982 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:21:04,982 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:04,983 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:21:04,986 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:04,986 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:21:09,986 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:09,987 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:21:09,995 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:09,996 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:21:14,996 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:14,996 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:21:15,002 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:15,002 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:21:20,002 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:20,003 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:21:20,009 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:20,009 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:21:25,009 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:25,010 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:21:25,018 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:25,018 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:21:30,018 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:30,018 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:21:30,019 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:30,020 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:21:35,020 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:35,020 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:21:35,029 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:35,029 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:21:40,029 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:40,029 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:21:40,035 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:40,035 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:21:45,036 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:45,036 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:21:45,044 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:45,044 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:21:50,044 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:50,045 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:21:50,051 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:50,051 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete
+23:21:55,051 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:21:55,051 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Executing "read-children-names" undefined
+23:21:55,058 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:21:55,058 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) Scan complete
+23:22:00,058 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scanning directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments for deployment content changes
+23:22:00,059 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Executing "read-children-names" undefined
+23:22:00,064 TRACE [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) Prepared response is {
+    "outcome" => undefined,
+    "result" => []
+}
+23:22:00,065 TRACE [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) Scan complete

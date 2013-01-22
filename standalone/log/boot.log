@@ -1,0 +1,106 @@
+21:08:10,615 INFO  [org.jboss.modules] JBoss Modules version 1.1.2.GA-redhat-1
+21:08:10,761 INFO  [org.jboss.msc] JBoss MSC version 1.0.2.GA-redhat-1
+21:08:10,796 INFO  [org.jboss.as] JBAS015899: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) starting
+21:08:10,801 DEBUG [org.jboss.as.config] Configured system properties:
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/jboss-modules.jar
+	java.class.version = 50.0
+	java.endorsed.dirs = /home/nmone/jdk1.6.0_31/jre/lib/endorsed
+	java.ext.dirs = /home/nmone/jdk1.6.0_31/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /home/nmone/jdk1.6.0_31/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /home/nmone/jdk1.6.0_31/jre/lib/amd64/server:/home/nmone/jdk1.6.0_31/jre/lib/amd64:/home/nmone/jdk1.6.0_31/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.6.0_31-b04
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Sun Microsystems Inc.
+	java.specification.version = 1.6
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Sun Microsystems Inc.
+	java.vendor.url = http://java.sun.com/
+	java.vendor.url.bug = http://java.sun.com/cgi-bin/bugreport.cgi
+	java.version = 1.6.0_31
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Sun Microsystems Inc.
+	java.vm.specification.version = 1.0
+	java.vm.vendor = Sun Microsystems Inc.
+	java.vm.version = 20.6-b01
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.home.dir = /home/nmone/Desktop/new/jboss-eap-6.0_log4j
+	jboss.host.name = nmone
+	jboss.modules.dir = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = nmone
+	jboss.qualified.host.name = nmone.csb
+	jboss.server.base.dir = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone
+	jboss.server.config.dir = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/configuration
+	jboss.server.data.dir = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/data
+	jboss.server.deploy.dir = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/data/content
+	jboss.server.log.dir = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/log
+	jboss.server.name = nmone
+	jboss.server.temp.dir = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/configuration/logging.properties
+	module.path = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules
+	org.jboss.boot.log.file = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/log/boot.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 2.6.32-279.19.1.el6.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /home/nmone/jdk1.6.0_31/jre/lib/resources.jar:/home/nmone/jdk1.6.0_31/jre/lib/rt.jar:/home/nmone/jdk1.6.0_31/jre/lib/sunrsasign.jar:/home/nmone/jdk1.6.0_31/jre/lib/jsse.jar:/home/nmone/jdk1.6.0_31/jre/lib/jce.jar:/home/nmone/jdk1.6.0_31/jre/lib/charsets.jar:/home/nmone/jdk1.6.0_31/jre/lib/modules/jdk.boot.jar:/home/nmone/jdk1.6.0_31/jre/classes
+	sun.boot.library.path = /home/nmone/jdk1.6.0_31/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/nmone/Desktop/new/jboss-eap-6.0_log4j/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/nmone/Desktop/new/jboss-eap-6.0_log4j/bin
+	user.home = /home/nmone
+	user.language = en
+	user.name = nmone
+	user.timezone = Asia/Kolkata
+21:08:10,802 DEBUG [org.jboss.as.config] VM Arguments: -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/log/boot.log -Dlogging.configuration=file:/home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/configuration/logging.properties -Djboss.home.dir=/home/nmone/Desktop/new/jboss-eap-6.0_log4j -Dfile.encoding=UTF-8 
+21:08:11,612 WARN  [org.jboss.as.server.deployment.scanner] JBAS015005: Reliable deployment behaviour is not possible when auto-deployment of exploded content is enabled (i.e. deployment without use of ".dodeploy"' marker files). Configuration of auto-deployment of exploded content is not recommended in any situation where reliability is desired. Configuring the deployment scanner's auto-deploy-exploded setting to "false" is recommended.
+21:08:11,616 ERROR [org.jboss.as.server.deployment.scanner] JBAS015010: The deployment scanner found a directory named META-INF that was not inside a directory whose name ends with .ear, .jar, .rar, .sar or .war. This is likely the result of unzipping an archive directly inside the /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments directory, which is a user error. The META-INF directory will not be scanned for deployments, but it is possible that the scanner mayfind other files from the unzipped archive and attempt to deploy them, leading to errors.
+21:08:11,617 ERROR [org.jboss.as.server.deployment.scanner] JBAS015010: The deployment scanner found a directory named WEB-INF that was not inside a directory whose name ends with .ear, .jar, .rar, .sar or .war. This is likely the result of unzipping an archive directly inside the /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments directory, which is a user error. The WEB-INF directory will not be scanned for deployments, but it is possible that the scanner mayfind other files from the unzipped archive and attempt to deploy them, leading to errors.
+21:08:11,629 INFO  [org.xnio] XNIO Version 3.0.4.GA-redhat-1
+21:08:11,630 INFO  [org.jboss.as.server] JBAS015888: Creating http management service using socket-binding (management-http)
+21:08:11,639 INFO  [org.xnio.nio] XNIO NIO Implementation Version 3.0.4.GA-redhat-1
+21:08:11,646 INFO  [org.jboss.remoting] JBoss Remoting version 3.2.8.GA-redhat-1
+21:08:11,662 INFO  [org.jboss.as.logging] JBAS011502: Removing bootstrap log handlers
+22:01:34,141 INFO  [org.jboss.as.logging] JBAS011503: Restored bootstrap log handlers
+22:01:34,209 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment hello1.war in 92ms
+22:01:34,207 INFO  [com.arjuna.ats.jbossatx] ARJUNA032018: Destroying TransactionManagerService
+22:01:34,224 INFO  [com.arjuna.ats.jbossatx] ARJUNA032014: Stopping transaction recovery manager
+22:01:34,292 INFO  [org.apache.coyote.http11.Http11Protocol] Pausing Coyote HTTP/1.1 on http-localhost/127.0.0.1:8080
+22:01:34,292 INFO  [org.apache.coyote.http11.Http11Protocol] Stopping Coyote HTTP/1.1 on http-localhost/127.0.0.1:8080
+22:01:34,315 INFO  [org.jboss.as] JBAS015950: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) stopped in 178ms

@@ -1,0 +1,619 @@
+17:38:45,050 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+17:38:45,077 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+17:38:45,086 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+17:38:45,097 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+17:38:45,115 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+17:38:45,127 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+17:38:45,130 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+17:38:45,159 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-7) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+17:38:45,291 INFO  [org.jboss.as.naming] (MSC service thread 1-7) JBAS011802: Starting Naming Service
+17:38:45,314 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) JBAS015400: Bound mail session [java:jboss/mail/Default]
+17:38:45,360 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+17:38:45,411 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-4) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+17:38:45,557 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-2) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:38:45,735 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+17:38:45,833 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "log4jtest.war"
+17:38:45,842 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+17:38:45,848 INFO  [org.jboss.as.remoting] (MSC service thread 1-4) JBAS017100: Listening on 127.0.0.1:9999
+17:38:45,848 INFO  [org.jboss.as.remoting] (MSC service thread 1-5) JBAS017100: Listening on 127.0.0.1:4447
+17:38:46,042 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-7) MSC000001: Failed to start service jboss.deployment.unit."log4jtest.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "log4jtest.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:123) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_31]
+	at java.lang.Thread.run(Thread.java:662) [rt.jar:1.6.0_31]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018014: Failed to parse XML descriptor "/content/log4jtest.war/WEB-INF/jboss-web.xml" at [2,3]
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:116) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[2,3]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:109)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:212)
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:71)
+	... 6 more
+
+17:38:46,055 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "log4jtest.war"
+17:38:46,056 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."log4jtest.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "log4jtest.war"
+
+17:38:46,240 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+17:38:46,241 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started (with errors) in 4074ms - Started 136 of 216 services (1 services failed or missing dependencies, 78 services are passive or on-demand)
+17:39:51,348 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-7) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+17:39:56,450 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+17:39:56,484 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+17:39:56,521 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+17:39:56,523 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+17:39:56,534 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+17:39:56,538 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+17:39:56,561 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-5) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+17:39:56,574 INFO  [org.jboss.as.security] (MSC service thread 1-4) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+17:39:56,599 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+17:39:56,609 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+17:39:56,613 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) JBAS015400: Bound mail session [java:jboss/mail/Default]
+17:39:56,711 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-6) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+17:39:56,828 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-4) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:39:56,946 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+17:39:57,068 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+17:39:57,072 INFO  [org.jboss.as.remoting] (MSC service thread 1-2) JBAS017100: Listening on 127.0.0.1:4447
+17:39:57,072 INFO  [org.jboss.as.remoting] (MSC service thread 1-5) JBAS017100: Listening on 127.0.0.1:9999
+17:39:57,072 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "log4jtest.war"
+17:39:57,188 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.deployment.unit."log4jtest.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "log4jtest.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:123) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_31]
+	at java.lang.Thread.run(Thread.java:662) [rt.jar:1.6.0_31]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018014: Failed to parse XML descriptor "/content/log4jtest.war/WEB-INF/jboss-web.xml" at [2,3]
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:116) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[2,3]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:109)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:212)
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:71)
+	... 6 more
+
+17:39:57,201 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "log4jtest.war"
+17:39:57,203 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."log4jtest.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "log4jtest.war"
+
+17:39:57,303 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+17:39:57,303 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started (with errors) in 1979ms - Started 136 of 216 services (1 services failed or missing dependencies, 78 services are passive or on-demand)
+17:40:17,237 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment log4jtest.war in 5ms
+17:40:17,239 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "log4jtest.war"
+17:40:17,298 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.deployment.unit."log4jtest.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "log4jtest.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:123) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_31]
+	at java.lang.Thread.run(Thread.java:662) [rt.jar:1.6.0_31]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018014: Failed to parse XML descriptor "/content/log4jtest.war/WEB-INF/jboss-web.xml" at [2,3]
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:116) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[2,3]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:109)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:212)
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:71)
+	... 6 more
+
+17:40:17,303 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment log4jtest.war in 3ms
+17:40:17,304 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "log4jtest.war"
+17:40:17,304 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS015863: Replacement of deployment "log4jtest.war" by deployment "log4jtest.war" was rolled back with failure message {"JBAS014671: Failed services" => {"jboss.deployment.unit.\"log4jtest.war\".PARSE" => "org.jboss.msc.service.StartException in service jboss.deployment.unit.\"log4jtest.war\".PARSE: JBAS018733: Failed to process phase PARSE of deployment \"log4jtest.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018014: Failed to parse XML descriptor \"/content/log4jtest.war/WEB-INF/jboss-web.xml\" at [2,3]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[2,3]
+Message: Unexpected element 'class-loading' encountered"}}
+17:40:17,354 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.deployment.unit."log4jtest.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "log4jtest.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:123) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_31]
+	at java.lang.Thread.run(Thread.java:662) [rt.jar:1.6.0_31]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018014: Failed to parse XML descriptor "/content/log4jtest.war/WEB-INF/jboss-web.xml" at [2,3]
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:116) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[2,3]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:109)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:212)
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:71)
+	... 6 more
+
+17:40:17,357 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."log4jtest.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "log4jtest.war"
+
+17:40:32,380 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment log4jtest.war in 4ms
+17:40:32,381 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "log4jtest.war"
+17:40:32,620 INFO  [org.jboss.as.osgi] (MSC service thread 1-8) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:40:32,740 INFO  [org.jboss.web] (MSC service thread 1-3) JBAS018210: Registering web context: /log4jtest
+17:40:32,874 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:40:38,747 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-2) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+17:40:38,753 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-7) Pausing Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:40:38,753 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-7) Stopping Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:40:38,758 INFO  [org.jboss.as.osgi] (MSC service thread 1-7) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:40:45,885 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+17:40:45,896 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+17:40:45,923 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+17:40:45,923 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+17:40:45,957 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+17:40:45,966 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+17:40:45,991 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+17:40:45,999 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+17:40:46,006 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+17:40:46,018 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+17:40:46,093 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+17:40:46,154 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-1) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+17:40:46,347 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-6) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:40:46,413 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+17:40:46,552 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+17:40:46,554 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "log4jtest.war"
+17:40:46,558 INFO  [org.jboss.as.remoting] (MSC service thread 1-4) JBAS017100: Listening on 127.0.0.1:4447
+17:40:46,558 INFO  [org.jboss.as.remoting] (MSC service thread 1-3) JBAS017100: Listening on 127.0.0.1:9999
+17:40:46,821 INFO  [org.jboss.as.osgi] (MSC service thread 1-5) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:40:46,907 INFO  [org.jboss.web] (MSC service thread 1-1) JBAS018210: Registering web context: /log4jtest
+17:40:46,927 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "log4jtest.war"
+17:40:47,047 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+17:40:47,048 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started in 2267ms - Started 176 of 258 services (81 services are passive or on-demand)
+17:42:11,986 INFO  [org.jboss.as.osgi] (MSC service thread 1-8) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:42:12,009 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment log4jtest.war in 26ms
+17:42:12,010 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "log4jtest.war"
+17:42:12,096 INFO  [org.jboss.as.osgi] (MSC service thread 1-4) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:42:12,103 INFO  [org.jboss.web] (MSC service thread 1-4) JBAS018210: Registering web context: /log4jtest
+17:42:12,272 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:43:22,316 INFO  [org.jboss.as.osgi] (MSC service thread 1-7) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:43:22,325 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment log4jtest.war in 10ms
+17:43:22,326 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "log4jtest.war"
+17:43:22,407 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:43:22,417 INFO  [org.jboss.web] (MSC service thread 1-6) JBAS018210: Registering web context: /log4jtest
+17:43:22,529 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:43:26,809 INFO  [sdmp] (http-/127.0.0.1:8080-2) from log4j=== test log4j log
+17:43:26,810 ERROR [sdmp] (http-/127.0.0.1:8080-2) from log4j=== test log4j error log
+17:43:26,810 INFO  [stdout] (http-/127.0.0.1:8080-2) from system.out.println==== test system.out.println log
+17:43:26,810 ERROR [stderr] (http-/127.0.0.1:8080-2) from system.err.println==== test system.error.println log
+17:43:26,810 ERROR [stderr] (http-/127.0.0.1:8080-2) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+17:43:26,811 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+17:43:26,811 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at java.util.ArrayList.get(ArrayList.java:322)
+17:43:26,811 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at com.mpinfo.test.servlet.TestLog.doGet(TestLog.java:41)
+17:43:26,811 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+17:43:26,811 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+17:43:26,811 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+17:43:26,811 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+17:43:26,812 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+17:43:26,812 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+17:43:26,812 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+17:43:26,812 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+17:43:26,812 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+17:43:26,812 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+17:43:26,813 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+17:43:26,813 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+17:43:26,813 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+17:43:26,813 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+17:43:26,813 ERROR [stderr] (http-/127.0.0.1:8080-2) 	at java.lang.Thread.run(Thread.java:662)
+17:43:26,814 ERROR [sdmp] (http-/127.0.0.1:8080-2) from log4j=== error===Index: 2, Size: 2
+17:43:26,814 ERROR [stderr] (http-/127.0.0.1:8080-2) from system.err.println=== error===Index: 2, Size: 2
+17:44:57,567 INFO  [org.jboss.as.osgi] (MSC service thread 1-6) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:44:57,576 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment log4jtest.war in 10ms
+17:44:57,577 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "log4jtest.war"
+17:44:57,639 INFO  [org.jboss.as.osgi] (MSC service thread 1-3) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:44:57,649 INFO  [org.jboss.web] (MSC service thread 1-4) JBAS018210: Registering web context: /log4jtest
+17:44:57,795 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:45:12,807 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:45:12,818 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment log4jtest.war in 11ms
+17:45:12,823 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "log4jtest.war"
+17:45:12,881 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:45:12,889 INFO  [org.jboss.web] (MSC service thread 1-2) JBAS018210: Registering web context: /log4jtest
+17:45:13,033 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:45:28,045 INFO  [org.jboss.as.osgi] (MSC service thread 1-5) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:45:28,053 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment log4jtest.war in 8ms
+17:45:28,054 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "log4jtest.war"
+17:45:28,120 INFO  [org.jboss.as.osgi] (MSC service thread 1-3) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:45:28,129 INFO  [org.jboss.web] (MSC service thread 1-4) JBAS018210: Registering web context: /log4jtest
+17:45:28,233 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:45:33,241 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:45:33,255 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment log4jtest.war in 14ms
+17:45:33,256 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "log4jtest.war"
+17:45:33,319 INFO  [org.jboss.as.osgi] (MSC service thread 1-3) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:45:33,329 INFO  [org.jboss.web] (MSC service thread 1-6) JBAS018210: Registering web context: /log4jtest
+17:45:33,477 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:46:13,505 INFO  [org.jboss.as.osgi] (MSC service thread 1-2) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:46:13,529 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment log4jtest.war in 34ms
+17:46:13,530 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "log4jtest.war"
+17:46:13,592 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-7) MSC000001: Failed to start service jboss.deployment.unit."log4jtest.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "log4jtest.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:123) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_31]
+	at java.lang.Thread.run(Thread.java:662) [rt.jar:1.6.0_31]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018014: Failed to parse XML descriptor "/content/log4jtest.war/WEB-INF/jboss-web.xml" at [2,3]
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:116) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[2,3]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:109)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:212)
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:71)
+	... 6 more
+
+17:46:13,599 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment log4jtest.war in 3ms
+17:46:13,600 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS015863: Replacement of deployment "log4jtest.war" by deployment "log4jtest.war" was rolled back with failure message {"JBAS014671: Failed services" => {"jboss.deployment.unit.\"log4jtest.war\".PARSE" => "org.jboss.msc.service.StartException in service jboss.deployment.unit.\"log4jtest.war\".PARSE: JBAS018733: Failed to process phase PARSE of deployment \"log4jtest.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018014: Failed to parse XML descriptor \"/content/log4jtest.war/WEB-INF/jboss-web.xml\" at [2,3]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[2,3]
+Message: Unexpected element 'class-loading' encountered"}}
+17:46:13,601 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "log4jtest.war"
+17:46:13,635 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.deployment.unit."log4jtest.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "log4jtest.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:123) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_31]
+	at java.lang.Thread.run(Thread.java:662) [rt.jar:1.6.0_31]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018014: Failed to parse XML descriptor "/content/log4jtest.war/WEB-INF/jboss-web.xml" at [2,3]
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:116) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[2,3]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:109)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:212)
+	at org.jboss.as.web.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:71)
+	... 6 more
+
+17:46:13,637 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."log4jtest.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "log4jtest.war"
+
+17:46:28,650 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment log4jtest.war in 3ms
+17:46:28,651 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "log4jtest.war"
+17:46:28,712 INFO  [org.jboss.as.osgi] (MSC service thread 1-6) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:46:28,720 INFO  [org.jboss.web] (MSC service thread 1-1) JBAS018210: Registering web context: /log4jtest
+17:46:28,831 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:47:43,857 INFO  [org.jboss.as.osgi] (MSC service thread 1-2) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:47:43,862 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment log4jtest.war in 6ms
+17:47:43,863 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "log4jtest.war"
+17:47:43,896 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-7) MSC000001: Failed to start service jboss.deployment.unit."log4jtest.war".STRUCTURE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".STRUCTURE: JBAS018733: Failed to process phase STRUCTURE of deployment "log4jtest.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:123) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_31]
+	at java.lang.Thread.run(Thread.java:662) [rt.jar:1.6.0_31]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018748: Error loading jboss-deployment-structure.xml from /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/tmp/vfs/temp3d56bd5b0d7f21f/log4jtest.war-84dc55475d21a03f/WEB-INF/jboss-deployment-structure.xml
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.parse(DeploymentStructureDescriptorParser.java:300) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.parse(DeploymentStructureDescriptorParser.java:272) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.deploy(DeploymentStructureDescriptorParser.java:138) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:116) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Unexpected element 'jboss-web'
+	at org.jboss.staxmapper.XMLMapperImpl.processNested(XMLMapperImpl.java:108)
+	at org.jboss.staxmapper.XMLMapperImpl.parseDocument(XMLMapperImpl.java:69)
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.parse(DeploymentStructureDescriptorParser.java:294) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 8 more
+
+17:47:43,898 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment log4jtest.war in 0ms
+17:47:43,898 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "log4jtest.war"
+17:47:43,899 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS015863: Replacement of deployment "log4jtest.war" by deployment "log4jtest.war" was rolled back with failure message {"JBAS014671: Failed services" => {"jboss.deployment.unit.\"log4jtest.war\".STRUCTURE" => "org.jboss.msc.service.StartException in service jboss.deployment.unit.\"log4jtest.war\".STRUCTURE: JBAS018733: Failed to process phase STRUCTURE of deployment \"log4jtest.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018748: Error loading jboss-deployment-structure.xml from /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/tmp/vfs/temp3d56bd5b0d7f21f/log4jtest.war-84dc55475d21a03f/WEB-INF/jboss-deployment-structure.xml
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Unexpected element 'jboss-web'"}}
+17:47:43,929 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.deployment.unit."log4jtest.war".STRUCTURE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".STRUCTURE: JBAS018733: Failed to process phase STRUCTURE of deployment "log4jtest.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:123) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_31]
+	at java.lang.Thread.run(Thread.java:662) [rt.jar:1.6.0_31]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018748: Error loading jboss-deployment-structure.xml from /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/tmp/vfs/temp3d56bd5b0d7f21f/log4jtest.war-6c4b1d60b3191a13/WEB-INF/jboss-deployment-structure.xml
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.parse(DeploymentStructureDescriptorParser.java:300) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.parse(DeploymentStructureDescriptorParser.java:272) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.deploy(DeploymentStructureDescriptorParser.java:138) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:116) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Unexpected element 'jboss-web'
+	at org.jboss.staxmapper.XMLMapperImpl.processNested(XMLMapperImpl.java:108)
+	at org.jboss.staxmapper.XMLMapperImpl.parseDocument(XMLMapperImpl.java:69)
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.parse(DeploymentStructureDescriptorParser.java:294) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 8 more
+
+17:47:43,931 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."log4jtest.war".STRUCTURE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".STRUCTURE: JBAS018733: Failed to process phase STRUCTURE of deployment "log4jtest.war"
+
+17:47:50,087 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-1) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+17:47:54,459 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+17:47:54,489 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+17:47:54,530 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+17:47:54,546 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+17:47:54,556 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+17:47:54,560 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-3) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+17:47:54,572 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+17:47:54,579 INFO  [org.jboss.as.security] (MSC service thread 1-4) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+17:47:54,596 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+17:47:54,619 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+17:47:54,624 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) JBAS015400: Bound mail session [java:jboss/mail/Default]
+17:47:54,761 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-5) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+17:47:54,902 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-5) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:47:55,017 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+17:47:55,120 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+17:47:55,122 INFO  [org.jboss.as.remoting] (MSC service thread 1-1) JBAS017100: Listening on 127.0.0.1:4447
+17:47:55,122 INFO  [org.jboss.as.remoting] (MSC service thread 1-8) JBAS017100: Listening on 127.0.0.1:9999
+17:47:55,122 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "log4jtest.war"
+17:47:55,221 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."log4jtest.war".STRUCTURE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".STRUCTURE: JBAS018733: Failed to process phase STRUCTURE of deployment "log4jtest.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:123) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA-redhat-1.jar:1.0.2.GA-redhat-1]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_31]
+	at java.lang.Thread.run(Thread.java:662) [rt.jar:1.6.0_31]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS018748: Error loading jboss-deployment-structure.xml from /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/tmp/vfs/temp90243c5df09f5473/log4jtest.war-8cc80d20afdb4413/WEB-INF/jboss-deployment-structure.xml
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.parse(DeploymentStructureDescriptorParser.java:300) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.parse(DeploymentStructureDescriptorParser.java:272) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.deploy(DeploymentStructureDescriptorParser.java:138) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:116) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Unexpected element 'jboss-web'
+	at org.jboss.staxmapper.XMLMapperImpl.processNested(XMLMapperImpl.java:108)
+	at org.jboss.staxmapper.XMLMapperImpl.parseDocument(XMLMapperImpl.java:69)
+	at org.jboss.as.server.deployment.module.descriptor.DeploymentStructureDescriptorParser.parse(DeploymentStructureDescriptorParser.java:294) [jboss-as-server-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	... 8 more
+
+17:47:55,233 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "log4jtest.war"
+17:47:55,234 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.unit."log4jtest.war".STRUCTURE: org.jboss.msc.service.StartException in service jboss.deployment.unit."log4jtest.war".STRUCTURE: JBAS018733: Failed to process phase STRUCTURE of deployment "log4jtest.war"
+
+17:47:55,369 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+17:47:55,370 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started (with errors) in 2070ms - Started 135 of 215 services (1 services failed or missing dependencies, 78 services are passive or on-demand)
+17:49:15,289 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment log4jtest.war in 2ms
+17:49:15,290 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "log4jtest.war"
+17:49:15,505 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:49:15,595 INFO  [org.jboss.web] (MSC service thread 1-3) JBAS018210: Registering web context: /log4jtest
+17:49:15,732 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:49:34,211 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+17:49:34,212 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+17:49:34,214 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+17:49:34,214 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+17:49:34,214 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+17:49:34,214 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.mpinfo.test.servlet.TestLog.doGet(TestLog.java:41)
+17:49:34,214 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+17:49:34,214 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+17:49:34,214 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+17:49:34,215 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+17:49:34,215 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+17:49:34,215 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+17:49:34,215 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+17:49:34,215 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+17:49:34,215 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+17:49:34,215 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+17:49:34,216 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+17:49:34,216 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+17:49:34,216 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+17:49:34,216 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+17:49:34,216 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+17:49:34,217 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+17:51:00,781 INFO  [org.jboss.as.osgi] (MSC service thread 1-4) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:51:00,806 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment log4jtest.war in 26ms
+17:51:00,807 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "log4jtest.war"
+17:51:00,890 INFO  [org.jboss.as.osgi] (MSC service thread 1-6) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:51:00,905 INFO  [org.jboss.web] (MSC service thread 1-8) JBAS018210: Registering web context: /log4jtest
+17:51:01,124 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:51:36,521 ERROR [stderr] (http-/127.0.0.1:8080-1) log4j:ERROR Could not find value for key log4j.appender.MyApp
+17:51:36,521 ERROR [stderr] (http-/127.0.0.1:8080-1) log4j:ERROR Could not instantiate appender named "MyApp".
+17:51:36,522 ERROR [stderr] (http-/127.0.0.1:8080-1) log4j:WARN No appenders could be found for logger (sdmp).
+17:51:36,522 ERROR [stderr] (http-/127.0.0.1:8080-1) log4j:WARN Please initialize the log4j system properly.
+17:51:36,523 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+17:51:36,523 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+17:51:36,523 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+17:51:36,523 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+17:51:36,523 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+17:51:36,523 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.mpinfo.test.servlet.TestLog.doGet(TestLog.java:41)
+17:51:36,523 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+17:51:36,524 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+17:51:36,524 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+17:51:36,524 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+17:51:36,524 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+17:51:36,524 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+17:51:36,524 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+17:51:36,524 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+17:51:36,524 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+17:51:36,525 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+17:51:36,525 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+17:51:36,525 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+17:51:36,525 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+17:51:36,525 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+17:51:36,525 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+17:51:36,525 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+17:51:51,547 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-5) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+17:51:51,556 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-5) Pausing Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:51:51,556 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-5) Stopping Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:51:57,016 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+17:51:57,037 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+17:51:57,123 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+17:51:57,129 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+17:51:57,141 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+17:51:57,144 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+17:51:57,162 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+17:51:57,179 INFO  [org.jboss.as.security] (MSC service thread 1-8) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+17:51:57,184 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+17:51:57,195 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) JBAS015400: Bound mail session [java:jboss/mail/Default]
+17:51:57,197 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+17:51:57,324 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-2) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+17:51:57,490 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-8) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+17:51:57,593 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+17:51:57,663 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+17:51:57,664 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "log4jtest.war"
+17:51:57,666 INFO  [org.jboss.as.remoting] (MSC service thread 1-6) JBAS017100: Listening on 127.0.0.1:4447
+17:51:57,666 INFO  [org.jboss.as.remoting] (MSC service thread 1-7) JBAS017100: Listening on 127.0.0.1:9999
+17:51:57,922 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:51:58,009 INFO  [org.jboss.web] (MSC service thread 1-3) JBAS018210: Registering web context: /log4jtest
+17:51:58,022 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "log4jtest.war"
+17:51:58,121 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+17:51:58,122 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started in 2338ms - Started 176 of 258 services (81 services are passive or on-demand)
+17:52:02,753 ERROR [stderr] (http-/127.0.0.1:8080-1) log4j:ERROR Could not find value for key log4j.appender.MyApp
+17:52:02,753 ERROR [stderr] (http-/127.0.0.1:8080-1) log4j:ERROR Could not instantiate appender named "MyApp".
+17:52:02,757 ERROR [stderr] (http-/127.0.0.1:8080-1) log4j:WARN No appenders could be found for logger (sdmp).
+17:52:02,757 ERROR [stderr] (http-/127.0.0.1:8080-1) log4j:WARN Please initialize the log4j system properly.
+17:52:02,757 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+17:52:02,757 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+17:52:02,758 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+17:52:02,759 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+17:52:02,759 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+17:52:02,759 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.mpinfo.test.servlet.TestLog.doGet(TestLog.java:41)
+17:52:02,759 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+17:52:02,759 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+17:52:02,759 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+17:52:02,759 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+17:52:02,759 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+17:52:02,759 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+17:52:02,760 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+17:52:02,760 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+17:52:02,760 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+17:52:02,760 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+17:52:02,760 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+17:52:02,760 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+17:52:02,760 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+17:52:02,760 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+17:52:02,760 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+17:52:02,761 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+17:52:58,067 INFO  [org.jboss.as.osgi] (MSC service thread 1-2) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:52:58,092 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment log4jtest.war in 29ms
+17:52:58,093 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "log4jtest.war"
+17:52:58,172 INFO  [org.jboss.as.osgi] (MSC service thread 1-5) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+17:52:58,183 INFO  [org.jboss.web] (MSC service thread 1-3) JBAS018210: Registering web context: /log4jtest
+17:52:58,325 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+17:53:08,130 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+17:53:08,130 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+17:53:08,131 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+17:53:08,131 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+17:53:08,131 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+17:53:08,131 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.mpinfo.test.servlet.TestLog.doGet(TestLog.java:41)
+17:53:08,131 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+17:53:08,131 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+17:53:08,131 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+17:53:08,132 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+17:53:08,132 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+17:53:08,132 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+17:53:08,132 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+17:53:08,132 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+17:53:08,132 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+17:53:08,132 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+17:53:08,132 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+17:53:08,133 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+17:53:08,133 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+17:53:08,133 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+17:53:08,133 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+17:53:08,133 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+18:04:03,567 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+18:04:03,626 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment log4jtest.war in 60ms
+18:04:03,751 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018558: Undeployed "log4jtest.war"
+18:04:23,760 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "log4jtest.war"
+18:04:23,825 WARN  [org.jboss.as.ee] (MSC service thread 1-6) JBAS011006: Not installing optional component com.mpinfo.test.servlet.TestLog due to exception: java.lang.ClassNotFoundException: com.mpinfo.test.servlet.TestLog from [Module "deployment.log4jtest.war:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:468)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:423)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120)
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.6.0_31]
+	at java.lang.Class.forName(Class.java:247) [rt.jar:1.6.0_31]
+	at org.jboss.as.server.deployment.reflect.DeploymentClassIndex.classIndex(DeploymentClassIndex.java:54)
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:81) [jboss-as-ee-7.1.2.Final-redhat-1.jar:7.1.2.Final-redhat-1]
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:116)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [rt.jar:1.6.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [rt.jar:1.6.0_31]
+	at java.lang.Thread.run(Thread.java:662) [rt.jar:1.6.0_31]
+
+18:04:23,835 INFO  [org.jboss.as.osgi] (MSC service thread 1-6) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+18:04:23,849 INFO  [org.jboss.web] (MSC service thread 1-8) JBAS018210: Registering web context: /log4jtest
+18:04:23,972 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "log4jtest.war"
+18:05:18,991 INFO  [org.jboss.as.osgi] (MSC service thread 1-7) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+18:05:19,002 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment log4jtest.war in 11ms
+18:05:19,003 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "log4jtest.war"
+18:05:19,073 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+18:05:19,081 INFO  [org.jboss.web] (MSC service thread 1-8) JBAS018210: Registering web context: /log4jtest
+18:05:19,213 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018565: Replaced deployment "log4jtest.war" with deployment "log4jtest.war"
+18:05:23,713 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-4) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+18:05:23,719 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-6) Pausing Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:05:23,719 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-6) Stopping Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:05:23,726 INFO  [org.jboss.as.osgi] (MSC service thread 1-7) JBAS011908: Unregister module: Module "deployment.log4jtest.war:main" from Service Module Loader
+18:05:40,788 INFO  [org.jboss.as.configadmin] (ServerService Thread Pool -- 26) JBAS016200: Activating ConfigAdmin Subsystem
+18:05:40,800 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 31) JBAS010280: Activating Infinispan subsystem.
+18:05:40,851 INFO  [org.jboss.as.osgi] (ServerService Thread Pool -- 39) JBAS011906: Activating OSGi Subsystem
+18:05:40,855 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013101: Activating Security Subsystem
+18:05:40,856 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 38) JBAS011800: Activating Naming Subsystem
+18:05:40,865 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (JBoss IronJacamar 1.0.11.Final-redhat-1)
+18:05:40,882 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+18:05:40,888 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+18:05:40,893 INFO  [org.jboss.as.security] (MSC service thread 1-7) JBAS013100: Current PicketBox version=4.0.9.Final-redhat-1
+18:05:40,911 INFO  [org.jboss.as.naming] (MSC service thread 1-8) JBAS011802: Starting Naming Service
+18:05:40,917 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+18:05:41,004 INFO  [org.jboss.ws.common.management.AbstractServerConfig] (MSC service thread 1-6) JBoss Web Services - Stack CXF Server 4.0.4.GA-redhat-1
+18:05:41,187 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-4) Starting Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:05:41,281 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+18:05:41,360 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) JBAS015012: Started FileSystemDeploymentService for directory /home/nmone/Desktop/new/jboss-eap-6.0_log4j/standalone/deployments
+18:05:41,362 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "log4jtest.war"
+18:05:41,366 INFO  [org.jboss.as.remoting] (MSC service thread 1-6) JBAS017100: Listening on 127.0.0.1:4447
+18:05:41,366 INFO  [org.jboss.as.remoting] (MSC service thread 1-8) JBAS017100: Listening on 127.0.0.1:9999
+18:05:41,634 INFO  [org.jboss.as.osgi] (MSC service thread 1-8) JBAS011907: Register module: Module "deployment.log4jtest.war:main" from Service Module Loader
+18:05:41,714 INFO  [org.jboss.web] (MSC service thread 1-3) JBAS018210: Registering web context: /log4jtest
+18:05:41,733 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "log4jtest.war"
+18:05:41,845 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+18:05:41,846 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss EAP 6.0.0.GA (AS 7.1.2.Final-redhat-1) started in 2130ms - Started 176 of 258 services (81 services are passive or on-demand)
+18:05:47,506 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+18:05:47,507 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+18:05:47,508 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+18:05:47,508 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+18:05:47,508 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+18:05:47,508 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Mylog4jTest.TestLog.doGet(TestLog.java:41)
+18:05:47,508 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+18:05:47,508 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+18:05:47,508 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+18:05:47,509 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+18:05:47,509 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+18:05:47,509 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+18:05:47,509 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+18:05:47,509 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+18:05:47,509 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+18:05:47,509 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+18:05:47,509 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+18:05:47,509 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+18:05:47,510 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+18:05:47,510 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+18:05:47,510 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+18:05:47,510 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+18:15:10,834 INFO  [stdout] (http-/127.0.0.1:8080-1) from system.out.println==== test system.out.println log
+18:15:10,834 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println==== test system.error.println log
+18:15:10,834 ERROR [stderr] (http-/127.0.0.1:8080-1) java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+18:15:10,835 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.RangeCheck(ArrayList.java:547)
+18:15:10,835 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.util.ArrayList.get(ArrayList.java:322)
+18:15:10,835 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at com.test.Mylog4jTest.TestLog.doGet(TestLog.java:41)
+18:15:10,835 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+18:15:10,835 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+18:15:10,835 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:329)
+18:15:10,835 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:248)
+18:15:10,835 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+18:15:10,836 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+18:15:10,836 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.jboss.as.web.security.SecurityContextAssociationValve.invoke(SecurityContextAssociationValve.java:153)
+18:15:10,836 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+18:15:10,836 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+18:15:10,836 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+18:15:10,836 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:368)
+18:15:10,836 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+18:15:10,836 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:679)
+18:15:10,836 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:931)
+18:15:10,837 ERROR [stderr] (http-/127.0.0.1:8080-1) 	at java.lang.Thread.run(Thread.java:662)
+18:15:10,837 ERROR [stderr] (http-/127.0.0.1:8080-1) from system.err.println=== error===Index: 2, Size: 2
+18:19:07,748 INFO  [org.apache.catalina.core.StandardContext] (MSC service thread 1-1) Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+18:19:07,749 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-6) Pausing Coyote HTTP/1.1 on http-/127.0.0.1:8080
+18:19:07,750 INFO  [org.apache.coyote.http11.Http11Protocol] (MSC service thread 1-6) Stopping Coyote HTTP/1.1 on http-/127.0.0.1:8080

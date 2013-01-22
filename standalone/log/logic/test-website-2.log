@@ -1,0 +1,3 @@
+20:16:22,180 INFO  (http-/127.0.0.1:8080-1) [com.test.Myslf4jTest.TestLog] from slf4j=== test slf4j log
+20:16:22,181 ERROR (http-/127.0.0.1:8080-1) [com.test.Myslf4jTest.TestLog] from slf4j=== test slf4j error log
+20:16:22,185 ERROR (http-/127.0.0.1:8080-1) [com.test.Myslf4jTest.TestLog] from slf4j=== error===Index: 2, Size: 2
